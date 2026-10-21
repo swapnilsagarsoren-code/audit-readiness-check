@@ -29,9 +29,11 @@ None.
 - Security: guard first in record and decide, refusals returned not thrown, stale-answer check, snapshot recomputed on the server, validators are literal unions, nothing written to the books, no passcode stored or returned, schema change additive (four new tables), no secrets in the new diff.
 - UI: fieldset and legend, aria-pressed, scope on headers, aria-live; loading, error and missing states; 44 px targets and no sideways scroll at 390 and 1440 px; no banned words; password field.
 - Tests: no skip, only or todo; earlier tests not weakened (answers-api guard text moved to guard.ts and is equal or stronger; boundaries has the four new tables; gaps-page flipped because R2 and R3 rows now link). Convex behaviour is covered only by text and regex tests; browser tests mock Convex.
-- Live dev (read-only): Delta Rubber stored answer certificate yes, size small, terms none; snapshot interest_due, 567,123 paise at 5.75% (stored 20 Oct 2026, rbi.org.in); approved. Meridian stored answer documents both; split Rs 24 cr (balance Rs 96 cr, 12 paid, 48 left, Rs 2 cr each); current ratio 1.2292 to 1.1385 against the 1.20 floor; approved. Matches spec A3 (1.23 to 1.14).
+- Live dev (read-only): Delta Rubber stored answer certificate yes, size small, terms none; snapshot interest_due, 567,123 paise at 5.75% (stored 20 Oct 2026, rbi.org.in); approved. Meridian stored answer documents both; split Rs 2.4 cr (balance Rs 9.6 cr, 12 paid, 48 left, Rs 20 lakh each); current ratio 1.2292 to 1.1385 against the 1.20 floor; approved. Matches spec A3 (1.23 to 1.14).
 
 ## Verdict reasoning
 No blocker. The accounting was reproduced by hand, the security model matches Gate B, and the dev data matches the owner's run. The three should-fix items are an edge-case crash that failed safe and two missing disclosures; none produces a wrong number on the synthetic books. The single Playwright failure was a load-related teardown timeout that passed on a clean rerun.
 
 VERDICT: PASS
+
+Erratum (21 Oct 2026, by the repository owner): three amounts on the live-dev line were off by a factor of ten and are corrected (Rs 2.4 cr, Rs 9.6 cr, Rs 20 lakh). The verdict and ratios are unchanged.
