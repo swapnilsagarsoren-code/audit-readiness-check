@@ -1,0 +1,30 @@
+{
+  "provenance": "Hand-transcribed from docs/SYNTHETIC_COMPANY_SPEC.md lines 24–28. Counts not stated by the spec are explicit M0 fixture assumptions: one receipt/bill per amount, ten equal Bharat bills, twelve Zenvar sales, two Sharma receipts and twelve term-loan principal payments. Amount is principal once, not debit plus credit. No generator or answer-key file was used to create this fixture.",
+  "cases": [
+    {"id":"P1","rule":"R1","party":"Rajesh Mehta","ledger":"Rajesh Mehta","voucherCount":3,"amount":2500000000,"side":"cr","narration":"temporary funds from MD","group":"Sundry Creditors"},
+    {"id":"P2","rule":"R1","party":"Anita Mehta","ledger":"Anita Mehta","voucherCount":1,"amount":600000000,"side":"cr","narration":"loan recd","group":"Unsecured Loans"},
+    {"id":"P3","rule":"R1","party":"Mehta Family Trust","ledger":"Mehta Family Trust","voucherCount":1,"amount":500000000,"side":"cr","narration":"recd for working capital","group":"Sundry Creditors"},
+    {"id":"P4","rule":"R1","party":"Sharma Traders","ledger":"Sharma Traders","voucherCount":2,"amount":100000000,"side":"cr","narration":"funds received by NEFT","group":"Sundry Creditors"},
+    {"id":"D1","rule":"R1","party":"Kaveri Steel Traders","ledger":"Kaveri Steel Traders","voucherCount":2,"amount":100000000,"side":"cr","narration":"Purchase of production materials","group":"Sundry Creditors"},
+    {"id":"D2","rule":"R1","party":"Lotus Paints","ledger":"Lotus Paints","voucherCount":2,"amount":50000000,"side":"cr","narration":"Purchase of production materials","group":"Sundry Creditors"},
+    {"id":"P5","rule":"R2","party":"Bharat Fasteners","ledger":"Bharat Fasteners","voucherCount":20,"amount":560000000,"side":"cr","narration":"Purchase of fasteners","group":"Sundry Creditors"},
+    {"id":"P6","rule":"R2","party":"Delta Rubber","ledger":"Delta Rubber","voucherCount":2,"amount":80000000,"side":"cr","narration":"Purchase of production materials","group":"Sundry Creditors"},
+    {"id":"P7","rule":"R2","party":"Kumar Packaging","ledger":"Kumar Packaging","voucherCount":1,"amount":19000000,"side":"cr","narration":"Purchase of production materials","group":"Sundry Creditors"},
+    {"id":"D3","rule":"R2","party":"Sai Precision Springs","ledger":"Sai Precision Springs","voucherCount":2,"amount":60000000,"side":"cr","narration":"Purchase of production materials","group":"Sundry Creditors"},
+    {"id":"D4","rule":"R2","party":"Vega Castings","ledger":"Vega Castings","voucherCount":2,"amount":120000000,"side":"cr","narration":"Purchase of production materials","group":"Sundry Creditors"},
+    {"id":"P8","rule":"R3","party":"Meridian Co-operative Bank","ledger":"Meridian Co-operative Bank Term Loan","voucherCount":13,"amount":12000000000,"side":"cr","narration":"Term loan received; 60 monthly instalments from Apr 2025","group":"Secured Loans"},
+    {"id":"D5","rule":"R3","party":"Unity Commercial Bank","ledger":"Unity Commercial Bank Cash Credit","voucherCount":1,"amount":1100000000,"side":"cr","narration":"Cash credit drawdown","group":"Bank OD A/c"},
+    {"id":"P9","rule":"R4","party":"Kaveri Machine Tools","ledger":"Repairs & Maintenance","voucherCount":1,"amount":380000000,"side":"dr","narration":"new spindle assembly installed on VMC-3","group":"Indirect Expenses"},
+    {"id":"P10","rule":"R4","party":"Om Constructions","ledger":"Repairs & Maintenance","voucherCount":1,"amount":1200000000,"side":"dr","narration":"construction of new shed – running bill 2","group":"Indirect Expenses"},
+    {"id":"P11","rule":"R4","party":"Arena Motors","ledger":"Repairs & Maintenance","voucherCount":1,"amount":220000000,"side":"dr","narration":"purchase of new MPV for sales team","group":"Indirect Expenses"},
+    {"id":"D6","rule":"R4","party":"Shree Engineering Works","ledger":"Repairs & Maintenance","voucherCount":1,"amount":4500000,"side":"dr","narration":"quarterly servicing – compressor","group":"Indirect Expenses"},
+    {"id":"D7","rule":"R4","party":"Colour Craft Painters","ledger":"Repairs & Maintenance","voucherCount":1,"amount":30000000,"side":"dr","narration":"repainting of office","group":"Indirect Expenses"},
+    {"id":"P12","rule":"R5","party":"Gupta Scrap Dealers","ledger":"Sales - Components","voucherCount":1,"amount":450000000,"side":"cr","narration":"sale of MS scrap","group":"Sales Accounts"},
+    {"id":"P13","rule":"R5","party":"Kestrel General Insurance","ledger":"Sales - Components","voucherCount":1,"amount":300000000,"side":"cr","narration":"claim recd – fire at stores","group":"Sales Accounts"},
+    {"id":"P14","rule":"R5","party":"Export Incentive Authority","ledger":"Sales - Components","voucherCount":1,"amount":250000000,"side":"cr","narration":"RoDTEP credit","group":"Sales Accounts"},
+    {"id":"P15","rule":"R5","party":"Meridian Co-operative Bank","ledger":"Sales - Components","voucherCount":1,"amount":120000000,"side":"cr","narration":"FD interest","group":"Sales Accounts"},
+    {"id":"P16","rule":"R5","party":"Corvel Bank","ledger":"Sales - Components","voucherCount":1,"amount":90000000,"side":"cr","narration":"exchange gain on USD receivable","group":"Sales Accounts"},
+    {"id":"P17","rule":"R5","party":"Patel Enterprises","ledger":"Sales - Components","voucherCount":1,"amount":400000000,"side":"cr","narration":"sale of old lathe machine","group":"Sales Accounts"},
+    {"id":"D8","rule":"R5","party":"Zenvar Motors Ltd","ledger":"Sales - Components","voucherCount":12,"amount":42000000000,"side":"cr","narration":"Sale of brake and suspension components","group":"Sales Accounts"}
+  ]
+}

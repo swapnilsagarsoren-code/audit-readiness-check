@@ -1,0 +1,4459 @@
+{
+  "about": "Labelled question bank for the M1 checker. Stored items: live-run questions labelled by the builder (Swapnil to spot-check). S items: written by an independent agent from the rules only. Every checker change must keep every label right.",
+  "flags": {
+    "S-FLAG": {
+      "flag": {
+        "flagKey": "S-FLAG",
+        "ruleId": "R1",
+        "ledgerName": "Ravi Kulkarni",
+        "tallyGroup": "Sundry Creditors",
+        "entries": [
+          {
+            "date": "2025-06-10T00:00:00+05:30",
+            "party": "Ravi Kulkarni",
+            "narration": "recd frm RK - must repay by Dec, int 10% p.a.",
+            "amountPaise": 80000000,
+            "voucherNo": "SB-1",
+            "lineNo": 1
+          },
+          {
+            "date": "2025-08-22T00:00:00+05:30",
+            "party": "Ravi Kulkarni",
+            "narration": "pls reclass to loan - RK addl funds",
+            "amountPaise": 40000000,
+            "voucherNo": "SB-2",
+            "lineNo": 1
+          }
+        ]
+      },
+      "noSuppliedFigures": true
+    }
+  },
+  "items": [
+    {
+      "id": "X1",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P1",
+      "question": "Was the ₹2,50,00,000 received from Rajesh Mehta, described as temporary funds from MD, a loan, or was it something else such as an advance or capital?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "single factual question; earlier rejection was a checker false alarm or a figure code now supplies (INVENTED_NUMBER)"
+    },
+    {
+      "id": "X2",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P1",
+      "question": "Were the three receipts from Rajesh Mehta, labelled \"temporary funds from MD\", a loan that must be repaid, or something else?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "single factual question; earlier rejection was a checker false alarm or a figure code now supplies (INVENTED_NUMBER)"
+    },
+    {
+      "id": "X3",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P1",
+      "question": "Were the three receipts from Rajesh Mehta, labelled 'temporary funds from MD', given as a loan that must be repaid, or for something else?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "single factual question; earlier rejection was a checker false alarm or a figure code now supplies (INVENTED_NUMBER)"
+    },
+    {
+      "id": "R1",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P2",
+      "question": "Was the ₹60,00,000 received from Anita Mehta on 2025-04-05 a loan, or was it something else such as goods or services, an advance, or a deposit?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R2",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P3",
+      "question": "Was the ₹50,00,000 received from Mehta Family Trust on 2025-04-05 a loan that must be repaid, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R3",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P3",
+      "question": "Was the ₹50,00,000 received from Mehta Family Trust on 2025-04-05 a loan that must be repaid, or was it something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R4",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P4",
+      "question": "Is the ₹5,00,000 received from Sharma Traders on 2025-04-05 and again on 2025-05-05 a loan, which must be repaid with interest?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X4",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P4",
+      "question": "Were the two NEFT receipts from Sharma Traders, totalling ₹10,00,000, goods or services supplied, or money received as a loan?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "single factual question; earlier rejection was a checker false alarm or a figure code now supplies (INVENTED_NUMBER)"
+    },
+    {
+      "id": "X5",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P4",
+      "question": "Were the two NEFT receipts of ₹5,00,000 from Sharma Traders on 2025-04-05 and 2025-05-05 a loan, and do they carry interest or require repayment?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R5",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P5",
+      "question": "Does Bharat Fasteners have a Udyam registration certificate on file, and if so, which category does it fall under?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R6",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P5",
+      "question": "Does the Udyam registration certificate show Bharat Fasteners as Micro, Small, or Medium, or is it not registered?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R7",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P5",
+      "question": "Is Bharat Fasteners registered under Udyam, and if so, is it Micro, Small or Medium?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R8",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P6",
+      "question": "Does Delta Rubber hold a valid Udyam registration certificate that you can provide for the supplier status check?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X6",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P6",
+      "question": "Does the Udyam registration certificate for Delta Rubber show its enterprise size, and is that size Micro, Small, Medium, Not registered or Unknown?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R9",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P6",
+      "question": "Does the Udyam registration certificate for Delta Rubber show its classification as Micro, Small, or Medium?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R10",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P7",
+      "question": "Does the Udyam registration certificate for Kumar Packaging show its enterprise size as Micro, Small, or Medium?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R11",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P7",
+      "question": "For the Kumar Packaging entry of ₹1,90,000 dated 2026-02-07, is there an Udyam registration certificate showing its size category (Micro, Small, Medium, or not registered)?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R12",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P7",
+      "question": "Does the Udyam registration certificate for Kumar Packaging show its enterprise size as Micro, Small or Medium?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R13",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P8",
+      "question": "Does the Meridian Co-operative Bank term loan of ₹12,00,00,000 received on 2025-04-01 have a fixed repayment schedule of 60 monthly instalments from Apr 2025, as the entry narration states?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R14",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P8",
+      "question": "Does the repayment schedule for this Meridian Co-operative Bank term loan confirm that the loan is repayable in fixed monthly instalments beyond 12 months?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X7",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P8",
+      "question": "Is the Meridian Co-operative Bank term loan repayable in 60 monthly instalments from April 2025, and is it due within 12 months?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R15",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P9",
+      "question": "Did the Kaveri Machine Tools spindle assembly installed on VMC-3 on 2025-09-15 bring a new asset into use, or did it restore or extend an existing one?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R16",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P9",
+      "question": "Was the spindle assembly installed on VMC-3 a new asset rather than routine upkeep, given it was booked under Repairs & Maintenance?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X8",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P9",
+      "question": "Was the spindle assembly installed on VMC-3 a new asset rather than routine upkeep, and was it ready for use on the entry date?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R17",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P10",
+      "question": "Was the Om Constructions payment of ₹1,20,00,000 for the new shed construction work, as described in the narration?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R18",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P10",
+      "question": "Was the Om Constructions payment of ₹1,20,00,000 on 2025-09-15 for work that is part of a project under construction?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R19",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P10",
+      "question": "Was the Om Constructions payment of ₹1,20,00,000 for the new shed construction work, as described in the running bill narration?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R20",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P11",
+      "question": "Was the ₹22,00,000 payment to Arena Motors for a new MPV for the sales team a new asset rather than routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R21",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P11",
+      "question": "Was the ₹22,00,000 Arena Motors payment for the new MPV for the sales team a purchase of a new asset rather than routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R22",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P11",
+      "question": "Was the ₹22,00,000 Arena Motors payment for a new MPV for the sales team a new asset rather than routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R23",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P12",
+      "question": "Was the ₹45,00,000 paid to Gupta Scrap Dealers on 2025-11-12 for goods supplied, or is it a different kind of exchange?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R24",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P12",
+      "question": "What was exchanged for the ₹45,00,000 recorded on 2025-11-12 with Gupta Scrap Dealers: goods/services supplied, a loan, an advance, a deposit, a claim or refund, capital money, a fixed asset sale, or not sure?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R25",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P12",
+      "question": "Was the ₹45,00,000 entry to Gupta Scrap Dealers on 2025-11-12 for goods supplied, or for something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R26",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P13",
+      "question": "Was the ₹30,00,000 received from Kestrel General Insurance on 2025-11-12 a claim or refund for the fire at stores, rather than payment for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R27",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P13",
+      "question": "Was the ₹30,00,000 received from Kestrel General Insurance on 2025-11-12 a claim or refund settlement, rather than a sale of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R28",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P13",
+      "question": "What was the Rs 30,00,000 received from Kestrel General Insurance on 12 November 2025 for: a claim settlement, a sale of goods or services, or another reason?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R29",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P14",
+      "question": "Was the RoDTEP credit of ₹25,00,000 received from the Export Incentive Authority a payment for goods or services supplied, or is it a claim or refund?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R30",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P14",
+      "question": "Was the ₹25,00,000 RoDTEP credit received from the Export Incentive Authority a payment for goods or services supplied, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R31",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P14",
+      "question": "Was the ₹25,00,000 RoDTEP credit recorded under Sales - Components a payment for goods or services supplied, or is it a government export incentive credit?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R32",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P15",
+      "question": "Is the ₹12,00,000 credited on 2025-11-12 from Meridian Co-operative Bank with narration \"FD interest\" a return of interest on a fixed deposit rather than a sale of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R33",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P15",
+      "question": "Was the ₹12,00,000 credited to Sales - Components on 12 November 2025 from Meridian Co-operative Bank for FD interest, rather than for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R34",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P15",
+      "question": "Is the ₹12,00,000 credited on 2025-11-12 from Meridian Co-operative Bank for FD interest, rather than a supply of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R35",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 credited on 2025-11-12 from Corvel Bank in the Sales - Components ledger goods or services supplied, or some other type of exchange?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R36",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 entry from Corvel Bank on 12 November 2025 for goods or services supplied, or for something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R37",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 credit from Corvel Bank dated 2025-11-12 for goods or services supplied, or for something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R38",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 entry to Patel Enterprises on 2025-11-12 a sale of goods or services, or was it the sale of a fixed asset?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R39",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 entry to Patel Enterprises dated 2025-11-12 for the sale of an old lathe machine, meaning a sale of a fixed asset rather than goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R40",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 entry to Patel Enterprises on 2025-11-12 for the sale of a fixed asset, rather than for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R41",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 2025-07-05 a loan or some other type of exchange?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R42",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 2025-07-05 goods or services supplied, a loan, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R43",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 5 July 2025 a loan, or was it something else such as goods supplied or an advance against future supply?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R44",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 2025-07-05 by NEFT for goods or services supplied, a loan, an advance against future supply, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X9",
+      "source": "stored 2026-10-16_0200",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "For the ₹5,60,000 received from Sharma Traders on 2025-07-05, was the money a loan or an advance against future supply, and what was it for?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "X10",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P1",
+      "question": "Rajesh Mehta's three receipts totalling ₹2,50,00,000 are described as temporary funds from the MD, so was this money given as a loan that must be repaid, or was it something else?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "single factual question; earlier rejection was a checker false alarm or a figure code now supplies (UNKNOWN_TITLE_CASE_NAME+QUOTE_NOT_IN_FIELD)"
+    },
+    {
+      "id": "R45",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P1",
+      "question": "Were the three receipts from Rajesh Mehta, totalling ₹2,50,00,000, goods or services supplied, a loan, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R46",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P2",
+      "question": "Is the ₹60,00,000 received from Anita Mehta on 2025-04-05 a loan that must be repaid, rather than goods, a deposit or share money?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R47",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P2",
+      "question": "Was the ₹60,00,000 received from Anita Mehta on 2025-04-05 a loan that must be repaid, rather than payment for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R48",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P2",
+      "question": "Was the ₹60,00,000 received from Anita Mehta on 2025-04-05 a loan that must be repaid, rather than another type of receipt?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R49",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P3",
+      "question": "Was the ₹50,00,000 received from Mehta Family Trust on 2025-04-05 a loan that must be repaid, or was it for something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R50",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P3",
+      "question": "Is the ₹50,00,000 received from Mehta Family Trust on 2025-04-05 a loan that must be repaid, or a payment for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R51",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P3",
+      "question": "Was the ₹50,00,000 received from Mehta Family Trust on 2025-04-05 a loan that must be repaid, or did it come for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R52",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P4",
+      "question": "Were the two NEFT receipts of ₹5,00,000 each from Sharma Traders a loan, or were they for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R53",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P4",
+      "question": "Were the two NEFT receipts from Sharma Traders, totalling ₹10,00,000, for goods or services, a loan, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R54",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P4",
+      "question": "Were the two NEFT receipts of ₹5,00,000 each from Sharma Traders a loan, or were they for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X11",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P5",
+      "question": "Is Bharat Fasteners a registered Udyam micro, small or medium enterprise, given that it is recorded under Sundry Creditors with ten purchase and payment entries?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "single factual question; earlier rejection was a checker false alarm or a figure code now supplies (INVENTED_NUMBER)"
+    },
+    {
+      "id": "X12",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P5",
+      "question": "Is Bharat Fasteners, a Sundry Creditor, registered under Udyam, and if so as a Micro, Small or Medium enterprise?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled 19 Oct: its first rejection was a name false alarm (fixed), but \"and if so as …\" asks a second question",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R55",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P5",
+      "question": "Is Bharat Fasteners registered under Udyam, and if so, is it classified as Micro, Small or Medium?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R56",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P6",
+      "question": "Does Delta Rubber hold a valid Udyam registration certificate showing its enterprise size as Micro, Small, or Medium?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X13",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P6",
+      "question": "Is Delta Rubber, the vendor in the Sundry Creditors group, registered under Udyam, and what size category does its certificate show?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R57",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P6",
+      "question": "Does the Udyam registration certificate for Delta Rubber show whether it is registered as a Micro, Small or Medium enterprise?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R58",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P7",
+      "question": "Is Kumar Packaging registered on Udyam, and if so, which size category does its certificate show: Micro, Small, Medium, Not registered, or Unknown?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R59",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P7",
+      "question": "Is Kumar Packaging registered on Udyam, and if so, is it classified as Micro, Small or Medium?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R60",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P7",
+      "question": "Is Kumar Packaging registered on Udyam, and if so, is it classified as Micro, Small, Medium, or not registered?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R61",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P8",
+      "question": "Does the loan's 60-month term, starting April 2025, mean the balance is due after 12 months, or are there terms that make it repayable sooner?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X14",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P8",
+      "question": "Is the Meridian Co-operative Bank term loan repayable in 60 monthly instalments from April 2025, and does the repayment schedule confirm when each instalment falls due?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "X15",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P8",
+      "question": "Does the sanction letter or repayment schedule confirm the 60 monthly instalments from April 2025, and how much falls due within 12 months of 31 March?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R62",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P9",
+      "question": "Was the spindle assembly installed on VMC-3 a new asset rather than a repair to the existing machine?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R63",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P9",
+      "question": "Was the work on VMC-3 for a new spindle assembly a repair to the existing machine, or a new asset added to it?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R64",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P9",
+      "question": "Was the ₹38,00,000 paid to Kaveri Machine Tools for the new spindle assembly on VMC-3 a replacement that restores the machine's existing capacity, or a new asset?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R65",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P10",
+      "question": "Was the work recorded under Repairs & Maintenance a new asset or part of a project under construction rather than routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X16",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P10",
+      "question": "Was the Om Constructions payment of ₹1,20,00,000 for the construction of a new shed, rather than routine repairs, and does the work form part of a project still under construction?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R66",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P10",
+      "question": "Is the Repairs & Maintenance payment to Om Constructions for building a new shed, rather than routine upkeep of an existing asset?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R67",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P11",
+      "question": "Was the ₹22,00,000 paid to Arena Motors on 2025-09-15 for a new MPV, rather than routine upkeep or repair work on an existing vehicle?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R68",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P11",
+      "question": "Was the ₹22,00,000 paid to Arena Motors on 2025-09-15 for a new MPV, rather than repairs or maintenance work on an existing vehicle?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R69",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P12",
+      "question": "Was the money recorded in the Sales - Components ledger received for goods or services supplied, or was it a different kind of receipt such as a claim, refund, loan or deposit?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R70",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P12",
+      "question": "Was the ₹45,00,000 received from Gupta Scrap Dealers on 2025-11-12 for the sale of MS scrap, or for something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R71",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P12",
+      "question": "Was the ₹45,00,000 received from Gupta Scrap Dealers on 2025-11-12 for the sale of MS scrap, or was it a different kind of receipt?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R72",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P13",
+      "question": "Was the ₹30,00,000 credited to Sales - Components received from Kestrel General Insurance as a claim settlement for fire damage at the stores, rather than as a sale of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R73",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P13",
+      "question": "Was the ₹30,00,000 received from Kestrel General Insurance on 2025-11-12 an insurance claim settlement for the fire at the stores, rather than a sale of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R74",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P13",
+      "question": "Is the ₹30,00,000 received from Kestrel General Insurance on 2025-11-12 an insurance claim settlement rather than a sale of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R75",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P14",
+      "question": "Was the RoDTEP credit of ₹25,00,000 from Export Incentive Authority received as a government export incentive rather than payment for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R76",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P14",
+      "question": "Was the ₹25,00,000 RoDTEP credit received from the Export Incentive Authority a claim or refund rather than payment for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R77",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P14",
+      "question": "Was the RoDTEP credit of ₹25,00,000 received from the Export Incentive Authority a payment for goods or services supplied, or a different type of receipt?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R78",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P15",
+      "question": "Was the ₹12,00,000 recorded under Sales - Components an interest credit from Meridian Co-operative Bank on a fixed deposit, rather than a sale of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R79",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P15",
+      "question": "Is the ₹12,00,000 credited to Sales - Components from Meridian Co-operative Bank for FD interest, rather than a sale of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R80",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P15",
+      "question": "Was the ₹12,00,000 recorded on 2025-11-12 in 'Sales - Components' from Meridian Co-operative Bank for goods or services supplied, rather than for FD interest?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R81",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 credited to the Sales - Components ledger from Corvel Bank a payment for goods or services supplied, rather than a foreign-exchange gain on a USD receivable?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R82",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 credited to Sales - Components from Corvel Bank a payment for goods or services supplied, rather than a loan, refund or other receipt?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R83",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 credited to the Sales - Components ledger by Corvel Bank for an exchange gain on a USD receivable, rather than for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R84",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 recorded on 2025-11-12 in the Sales - Components ledger received from Patel Enterprises for the sale of an old lathe machine, or for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R85",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P17",
+      "question": "Was the Rs 40,00,000 received from Patel Enterprises on 12 November 2025 for the sale of an old lathe machine, rather than for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R86",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 receipt from Patel Enterprises on 2025-11-12 recorded under the Sales - Components ledger for the sale of an old lathe machine, rather than for goods or services supplied in the ordinary course of business?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R87",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 2025-07-05 a loan that must be repaid, or goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R88",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 receipt from Sharma Traders on 2025-07-05 goods or services supplied, or was it money received under a loan or advance?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R89",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 2025-07-05 goods or services supplied, or was it a loan?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R90",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "What was the ₹5,60,000 received from Sharma Traders on 2025-07-05 for: goods/services supplied, a loan, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R91",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "Was the money received from Sharma Traders in the Rajesh Mehta Trading ledger for goods or services supplied, or was it a loan or another arrangement?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R92",
+      "source": "stored 2026-10-16_0212",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 2025-07-05 a loan, or payment for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R93",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P1",
+      "question": "Were the three receipts from Rajesh Mehta, recorded as temporary funds from MD, a loan or another kind of payment?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R94",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P1",
+      "question": "Was the ₹2,50,00,000 received from Rajesh Mehta across these 3 entries a loan, given the narration \"temporary funds from MD\"?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R95",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P1",
+      "question": "Were the three receipts from Rajesh Mehta, totalling ₹2,50,00,000, a loan or advance from him, rather than payment for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R96",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P2",
+      "question": "Was the ₹60,00,000 received from Anita Mehta on 2025-04-05 a loan that must be repaid?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R97",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P2",
+      "question": "Was the ₹60,00,000 received from Anita Mehta on 2025-04-05 a loan, or was it something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R98",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P2",
+      "question": "Was the ₹60,00,000 received from Anita Mehta on 2025-04-05 a loan, and if so, what are its repayment terms?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R99",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P4",
+      "question": "Were the two NEFT receipts from Sharma Traders, totalling ₹10,00,000, a loan, or something else such as goods, services or an advance?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R100",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P4",
+      "question": "Were the two NEFT receipts from Sharma Traders, totalling ₹10,00,000, a loan, or were they payment for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R101",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P4",
+      "question": "Was the ₹10,00,000 received from Sharma Traders across 2 entries a loan, or was it payment for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R102",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P5",
+      "question": "Is Bharat Fasteners registered under Udyam, and if so, is it a Micro, Small or Medium enterprise?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R103",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P5",
+      "question": "Does Bharat Fasteners hold a Udyam registration certificate, and if so, which size category does it fall under?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R104",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P6",
+      "question": "Is Delta Rubber registered as a Micro, Small or Medium enterprise on a Udyam registration certificate?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R105",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P6",
+      "question": "Is Delta Rubber registered under Udyam, and if so, which size category does its certificate show?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R106",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P7",
+      "question": "Is Kumar Packaging registered on Udyam as a Micro, Small or Medium enterprise, or is it not registered?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R107",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P7",
+      "question": "Is Kumar Packaging registered as a Micro, Small or Medium enterprise under Udyam, given that its ledger sits in Sundry Creditors?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R108",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P8",
+      "question": "Is the Meridian Co-operative Bank term loan repayable in monthly instalments over a period longer than 12 months from 31 March?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R109",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P8",
+      "question": "What is the original repayment term of the Meridian Co-operative Bank term loan, as set out in the sanction letter or repayment schedule?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R110",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P8",
+      "question": "Is the Meridian Co-operative Bank term loan, with 60 monthly instalments from April 2025, repayable on a schedule that falls due within 12 months of 31 March?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R111",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P9",
+      "question": "Was the spindle assembly paid to Kaveri Machine Tools installed on VMC-3 as a new asset rather than routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R112",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P9",
+      "question": "Was the spindle assembly installed on VMC-3 a new asset rather than routine upkeep of existing equipment?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R113",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P9",
+      "question": "Was the spindle assembly paid to Kaveri Machine Tools on 2025-09-15 a new asset rather than routine upkeep, given it was booked to Repairs & Maintenance?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R114",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P10",
+      "question": "Was the Om Constructions running bill of ₹1,20,00,000 for construction of a new shed part of a project still under construction, rather than routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R115",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P10",
+      "question": "Was the Om Constructions running bill of ₹1,20,00,000 for the construction of a new shed part of a project still under construction, rather than routine repairs?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R116",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P10",
+      "question": "Was the ₹1,20,00,000 paid to Om Constructions for the construction of the new shed a part of a project still under construction on 2025-09-15?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R117",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P11",
+      "question": "Is the Repairs & Maintenance entry to Arena Motors for the purchase of a new MPV for the sales team a new asset rather than routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R118",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P11",
+      "question": "Was the ₹22,00,000 paid to Arena Motors for a new MPV for the sales team a new asset rather than routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R119",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P11",
+      "question": "Was the ₹22,00,000 paid to Arena Motors for a new MPV that was received and put into use, rather than routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X17",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P12",
+      "question": "Was the ₹45,00,000 recorded in Sales - Components a sale of MS scrap to Gupta Scrap Dealers, and which document supports it?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R120",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P12",
+      "question": "Was the money recorded under 'Sales - Components' for the scrap sold to Gupta Scrap Dealers the payment for goods supplied, rather than some other kind of receipt?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R121",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P12",
+      "question": "Was the money received from Gupta Scrap Dealers for goods supplied, or for something else such as a claim, refund or asset sale?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R122",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P13",
+      "question": "Was the ₹30,00,000 received from Kestrel General Insurance a settlement of an insurance claim for the fire at the stores, rather than payment for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R123",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P13",
+      "question": "Is the ₹30,00,000 received from Kestrel General Insurance on 2025-11-12 a claim settlement rather than a payment for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R124",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P13",
+      "question": "Was the ₹30,00,000 received from Kestrel General Insurance on 2025-11-12 a claim settlement, rather than payment for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R125",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P14",
+      "question": "Was the RoDTEP credit of ₹25,00,000 received from the Export Incentive Authority a payment for goods or services supplied, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R126",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P15",
+      "question": "Was the ₹12,00,000 recorded in \"Sales - Components\" a payment from Meridian Co-operative Bank for FD interest rather than sales of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R127",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P15",
+      "question": "Was the ₹12,00,000 credited to Sales - Components from Meridian Co-operative Bank for FD interest, rather than for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R128",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P15",
+      "question": "Was the ₹12,00,000 recorded under Sales - Components an interest receipt from a fixed deposit rather than income from goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R129",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 received from Corvel Bank in return for goods or services supplied, or was it something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R130",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 credited to Sales - Components from Corvel Bank a payment for goods or services supplied, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R131",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 received from Corvel Bank for goods or services supplied, or was it something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R132",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 received from Patel Enterprises on 2025-11-12 for the sale of an old lathe machine, rather than for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R133",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 2025-07-05 a loan, or was it something else such as an advance against future supply?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R134",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 received from Sharma Traders, recorded under Sundry Creditors, for goods or services supplied, or was it a loan or another kind of payment?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R135",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 received from Sharma Traders, recorded under Sundry Creditors, goods or services supplied, or a loan that must be repaid?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R136",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 2025-07-05 by NEFT a loan, or was it for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R137",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "Was the money received from Rajesh Mehta Trading, recorded under Sundry Creditors, a loan that must be repaid, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R138",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H1",
+      "question": "Were the four receipts from Sunita Rao, totalling ₹70,00,000, loans that must be repaid rather than goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R139",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H1",
+      "question": "Were the four receipts from Sunita Rao, totalling ₹70,00,000, a loan with agreed repayment terms, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R140",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H1",
+      "question": "Did the company receive ₹70,00,000 from Sunita Rao as a loan rather than as an advance against future supply or as something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R141",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H2",
+      "question": "Were the receipts from Anita Mehta and Pravin Kolhatkar, recorded under Sundry Creditors - Others (HO), given as loans, or was the money for something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X18",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H2",
+      "question": "Were the five receipts credited to Sundry Creditors - Others (HO) (totalling ₹80,00,000 across 5 entries) money lent to the company, or something else?",
+      "expect": "reject",
+      "reason": "INVENTED_NUMBER",
+      "category": "number",
+      "why": "self-calculated total across two parties; no total supplied"
+    },
+    {
+      "id": "X19",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H2",
+      "question": "Were the receipts from Anita Mehta and Pravin Kolhatkar, booked to Sundry Creditors - Others (HO), a loan, or something else such as an advance against future supply?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "single factual question; earlier rejection was a checker false alarm or a figure code now supplies (QUOTE_COUNT+QUOTE_NOT_IN_FIELD+INVENTED_NUMBER)"
+    },
+    {
+      "id": "R142",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H3",
+      "question": "Did Tolani Harshvardhan's 13 receipts totalling ₹63,25,000 from Harshvardhan Tolani represent a loan, and if so, what terms apply?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R143",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H3",
+      "question": "Were the 13 receipts from Harshvardhan Tolani totalling ₹63,25,000 booked under Sundry Creditors a loan that must be repaid, rather than payment for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R144",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H4",
+      "question": "Does Pinnacle Gaskets & Seals hold a Udyam registration certificate, and if so, which enterprise category does it fall under: Micro, Small, Medium, or Not registered?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R145",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H4",
+      "question": "Is Pinnacle Gaskets & Seals registered as a Micro, Small or Medium enterprise under Udyam?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R146",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H4",
+      "question": "Is Pinnacle Gaskets & Seals registered as a Micro, Small or Medium enterprise on its Udyam certificate?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X20",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H5",
+      "question": "Does the Halvorsen Urban Bank term loan have a repayment schedule of 48 EMIs, and is the balance due more than 12 months after 31 March?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R147",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H5",
+      "question": "Is the Halvorsen Urban Bank term loan repayable in fixed monthly instalments under the repayment schedule?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R148",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H5",
+      "question": "Is the Halvorsen Urban Bank term loan repaid in fixed monthly instalments under a repayment schedule?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R149",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H5",
+      "question": "Does the Halvorsen Urban Bank term loan have a repayment schedule of 48 EMIs that runs beyond 12 months from 31 March?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R150",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H6",
+      "question": "Did the work billed under bills TH/88 and TH/97 replace or upgrade the 250T press, or did it add a new asset?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X21",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H6",
+      "question": "Did the work billed as \"replacement of hydraulic power pack - 250T press\" and \"upgrade of PLC controls 250T press\" restore the press to its existing condition, or did it extend its life or capacity?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "single factual question; earlier rejection was a checker false alarm or a figure code now supplies (QUOTE_COUNT+QUOTE_NOT_IN_FIELD+INVENTED_NUMBER)"
+    },
+    {
+      "id": "X22",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H6",
+      "question": "Did the work billed under bills TH/88 and TH/97 replace the power pack and upgrade the PLC controls on the 250T press, or did it keep the press in its existing working condition?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "single factual question; earlier rejection was a checker false alarm or a figure code now supplies (QUOTE_NOT_IN_FIELD+INVENTED_NUMBER)"
+    },
+    {
+      "id": "R151",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H7",
+      "question": "Was the ₹18,00,000 received from Durgesh Engineering Works for the sale of the old CNC machine (VTL-1), or for something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R152",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H7",
+      "question": "Was the ₹18,00,000 received from Durgesh Engineering Works for the sale of the old CNC machine (VTL-1), or was it a different kind of payment?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R153",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H8",
+      "question": "Are these two entries from Brightwater Exchange Bank exchange gains on export invoices, rather than payments received for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R154",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H8",
+      "question": "Were these two entries in the Export Sales - USD ledger exchange gains from realising export receivables, rather than sales of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R155",
+      "source": "stored 2026-10-16_1742",
+      "flagKey": "H8",
+      "question": "Were these two entries in the Export Sales - USD ledger exchange gains on realised export receivables, rather than sales of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X23",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P1",
+      "question": "Were the three entries from Rajesh Mehta, totalling ₹2,50,00,000 across 3 entries, received as a loan, and is there a loan agreement or lender confirmation for them?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R156",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P1",
+      "question": "Was the ₹2,50,00,000 received from Rajesh Mehta across these 3 entries a loan, or was it something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R157",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P1",
+      "question": "Were the three payments of ₹1,00,00,000, ₹1,00,00,000 and ₹50,00,000 from Rajesh Mehta, recorded as temporary funds from the MD, a loan that must be repaid, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R158",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P1",
+      "question": "Were the three entries labelled 'temporary funds from MD' from Rajesh Mehta a loan, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R159",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P2",
+      "question": "Was the ₹60,00,000 received from Anita Mehta on 2025-04-05 a loan, or was it goods/services, an advance, a deposit or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R160",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P2",
+      "question": "Was the ₹60,00,000 received from Anita Mehta on 2025-04-05 a loan, or was it something else such as an advance or share money?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R161",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P3",
+      "question": "Was the ₹50,00,000 received from Mehta Family Trust on 2025-04-05 a loan that must be repaid, or was it goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R162",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P3",
+      "question": "Was the ₹50,00,000 received from Mehta Family Trust on 2025-04-05 a loan that must be repaid, or was it for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R163",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P4",
+      "question": "Were the two NEFT receipts of ₹10,00,000 from Sharma Traders loans, or was it another type of receipt such as advance against future supply or security deposit?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R164",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P4",
+      "question": "Did Sharma Traders provide goods or services for the two receipts of ₹10,00,000 across 2 entries, or was it money lent to the company?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R165",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P4",
+      "question": "Were the two NEFT receipts from Sharma Traders, totalling ₹10,00,000, a loan, or something else such as an advance or a deposit?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X24",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P5",
+      "question": "Is Bharat Fasteners registered under Udyam, and what size category does its registration show?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R166",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P5",
+      "question": "Is Bharat Fasteners registered under Udyam, and if so, as a Micro, Small or Medium enterprise?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R167",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P6",
+      "question": "Is Delta Rubber registered on Udyam, and if so, is it Micro, Small or Medium?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R168",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P6",
+      "question": "Is Delta Rubber registered on Udyam as a Micro, Small or Medium enterprise?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R169",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P6",
+      "question": "Is Delta Rubber, a Sundry Creditor with 2 entries, registered under Udyam, and if so in which size category?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R170",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P7",
+      "question": "Is Kumar Packaging registered under Udyam, and if so, what size category does its registration show?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R171",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P7",
+      "question": "Is Kumar Packaging registered under Udyam, and if so, what size category does its certificate show?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R172",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P7",
+      "question": "Is Kumar Packaging registered as a Udyam enterprise, and if so, is it Micro, Small or Medium?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R173",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P8",
+      "question": "Does the sanction letter or repayment schedule show the original term and the instalment dates for this term loan from Meridian Co-operative Bank?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R174",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P8",
+      "question": "Is the Meridian Co-operative Bank term loan repayable in 60 monthly instalments from April 2025, as the narration states, or does the sanction letter or repayment schedule set a different term?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R175",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P8",
+      "question": "Is the Meridian Co-operative Bank term loan repayable in 60 monthly instalments from April 2025, with a repayment schedule available to confirm the due dates?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R176",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P9",
+      "question": "Was the spindle assembly installed on VMC-3 a replacement that restores the machine's existing capacity, or a new asset added to it?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R177",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P9",
+      "question": "Was the new spindle assembly installed on VMC-3 a routine upkeep item, or did it extend the machine's life or capacity?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R178",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P9",
+      "question": "Was the spindle assembly installed on VMC-3 a routine upkeep item, or did it extend the machine's life or capacity, or was it a new asset?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R179",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P10",
+      "question": "Was the work on the new shed under the Om Constructions running bill 2 a new asset, or part of a project still under construction?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R180",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P10",
+      "question": "Was the construction of the new shed under the Om Constructions running bill completed and ready for use, or is it still under construction?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R181",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P10",
+      "question": "Is the Om Constructions running bill for the construction of the new shed a payment for an asset that was part of a project under construction?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R182",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P11",
+      "question": "Was the MPV bought from Arena Motors on 2025-09-15 a new asset, rather than routine upkeep of an existing vehicle?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R183",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P11",
+      "question": "Is the MPV bought from Arena Motors a new asset rather than routine upkeep, given it was booked to Repairs & Maintenance?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R184",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P11",
+      "question": "Was the vehicle bought from Arena Motors described as a new asset rather than routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R185",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P12",
+      "question": "Was the ₹45,00,000 received from Gupta Scrap Dealers for the sale of MS scrap, or was it a different kind of receipt?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R186",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P12",
+      "question": "Was the ₹45,00,000 received from Gupta Scrap Dealers for the sale of MS scrap a payment for goods supplied, or was it something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R187",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P13",
+      "question": "Was the ₹30,00,000 received from Kestrel General Insurance a claim settlement for the fire at stores, rather than a sale of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R188",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P13",
+      "question": "Was the ₹30,00,000 received from Kestrel General Insurance a payment for goods or services supplied, or an insurance claim settlement?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R189",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P13",
+      "question": "Was the ₹30,00,000 received from Kestrel General Insurance a claim settlement for the fire at stores rather than a sale of goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R190",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P14",
+      "question": "Is the RoDTEP credit of ₹25,00,000 booked in the 'Sales - Components' ledger a supply of goods or services, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R191",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P14",
+      "question": "Was the RoDTEP credit of ₹25,00,000 booked to Sales - Components a supply of goods or services, or is it an export incentive credit?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R192",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P14",
+      "question": "Is the RoDTEP credit of ₹25,00,000 booked to Sales - Components a goods/services supply, or is it a claim or refund from the export incentive authority?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R193",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P15",
+      "question": "Was the ₹12,00,000 received from Meridian Co-operative Bank for FD interest, rather than for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R194",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P15",
+      "question": "Is the ₹12,00,000 credited to Sales - Components on 2025-11-12 from Meridian Co-operative Bank a sale of goods or services, rather than interest or another non-sale receipt?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R195",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P15",
+      "question": "Is the ₹12,00,000 credited to Sales - Components from Meridian Co-operative Bank for FD interest a sale of goods or services, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R196",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 credited to Sales - Components a sale of goods or services, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R197",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 credited to Sales - Components a payment for goods or services, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R198",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 credited to Sales - Components from Corvel Bank for an exchange gain on a USD receivable, rather than for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R199",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 received from Patel Enterprises for the sale of an old lathe machine, rather than for goods or services supplied in the ordinary course?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R200",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 received from Patel Enterprises for the sale of an old lathe machine, which is a fixed asset, rather than goods supplied in the normal course of business?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R201",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 received from Patel Enterprises for the sale of the old lathe machine recorded in Sales - Components?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R202",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 receipt from Sharma Traders for goods or services supplied, or was it a loan or some other kind of payment?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R203",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 receipt from Sharma Traders on 2025-07-05 goods or services supplied, or money only, such as a loan?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R204",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 2025-07-05 goods or services supplied, or a loan or advance?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R205",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "Is the ₹5,60,000 received from Sharma Traders on 2025-07-05 for goods or services supplied, or is it money received for another purpose?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R206",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "Was the ₹5,60,000 received from Sharma Traders by NEFT on 2025-07-05 goods or services supplied, or a loan?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R207",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "Was the ₹5,60,000 received from Sharma Traders by NEFT on 2025-07-05 for goods or services supplied, or was it a loan?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R208",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H9",
+      "question": "Were the ₹25,00,000 and ₹15,00,000 NEFT receipts from Sunita Rao a loan that must be repaid, rather than payments for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X25",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H9",
+      "question": "Was the money Sunita Rao transferred to SR Funds A/c a loan, given the 9% p.a. interest provision in the ledger?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "single factual question; earlier rejection was a checker false alarm or a figure code now supplies (QUESTION_SENTENCE_COUNT)"
+    },
+    {
+      "id": "R209",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H9",
+      "question": "Was the ₹40,98,507 received from Sunita Rao across these three entries a loan that must be repaid with interest?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X26",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H9",
+      "question": "Was the money received from Sunita Rao a loan that carries interest at 9% p.a., rather than goods or services supplied?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "single factual question; earlier rejection was a checker false alarm or a figure code now supplies (QUESTION_SENTENCE_COUNT)"
+    },
+    {
+      "id": "R210",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H9",
+      "question": "Was the ₹40,98,507 received from Sunita Rao a loan that must be repaid, rather than goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R211",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H10",
+      "question": "Was the ₹35,00,000 received from Halvorne Ventures LLP on 2025-05-21 an advance against a future order, or was it a loan?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R212",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H10",
+      "question": "Was the ₹35,00,000 received from Halvorne Ventures LLP an advance against a future order, or a loan?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R213",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H10",
+      "question": "Was the money received from Halvorne Ventures LLP an advance against a future order, or a loan, as the narration suggests?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R214",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H11",
+      "question": "Were these 13 receipts from Kiran Bhosekar, totalling ₹59,05,150, loans that must be repaid, or was the money given for another purpose?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R215",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H11",
+      "question": "Were the 13 receipts from Kiran Bhosekar recorded as an unsecured loan that must be repaid, or were they payments for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R216",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H11",
+      "question": "Were the 13 receipts from Kiran Bhosekar, totalling ₹59,05,150 and recorded under Unsecured Loans, a loan with agreed repayment terms, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R217",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H12",
+      "question": "Is Pranav Gaskets & Seals registered under Udyam as a Micro enterprise, given its narration on the May 2025 purchase?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R218",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H12",
+      "question": "Is Pranav Gaskets & Seals registered under Udyam as a Micro enterprise, given the narration on the 12 May 2025 purchase entry?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R219",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H12",
+      "question": "Is Pranav Gaskets & Seals registered under Udyam as a Micro, Small or Medium enterprise, or is its status unknown?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X27",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H13",
+      "question": "Does the sanction letter or repayment schedule show the full term of the Solenne Capital TL loan, and when does the first EMI fall due?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R220",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H13",
+      "question": "Does the repayment schedule for the Solenne Capital Finance Ltd term loan show when the balance falls due?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R221",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H13",
+      "question": "Does the sanction letter or repayment schedule show the full original term and the repayment dates for Solenne Capital TL - Press Line 2?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X28",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H13",
+      "question": "Does the sanction letter or repayment schedule show the full term of the Press Line 2 term loan, and when does the first principal instalment fall due?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R222",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H13",
+      "question": "Is there a repayment schedule for the Solenne Capital TL loan showing when the EMI principal instalments fall due?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R223",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H14",
+      "question": "Did the press overhaul replace the main hydraulic power pack and reseal the cylinder, extending the press's life or capacity, rather than being routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R224",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H14",
+      "question": "Did the Trivandi Hydraulics overhaul of the 250T press, which replaced the main hydraulic power pack and resealed the cylinder, extend the press's life or capacity rather than just maintain it?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R225",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H14",
+      "question": "Did the overhaul of the 250T press, which replaced the main hydraulic power pack and resealed the cylinder, extend the press's life or capacity, or was it routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R226",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H15",
+      "question": "Was the \"old induction furnace 500kg sold as scrap - asset no PM/117\" entry a sale of a fixed asset rather than a sale of goods in the normal course?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R227",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H15",
+      "question": "Was the ledger \"Sales - Local GST 18%\" used for scrap sales, or was the money received for something else such as an asset sale?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R228",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H15",
+      "question": "Was the ledger entry for the old induction furnace sold to Halden Forge Supplies a sale of a fixed asset rather than scrap goods?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R229",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H16",
+      "question": "Is the money recorded under \"Sales - Job Work Charges\" from Velmora Tooling Pvt Ltd for bay 4 shed rent, which is a service rather than goods, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R230",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H16",
+      "question": "Is the money received from Velmora Tooling Pvt Ltd rent for the bay 4 shed, or payment for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X29",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H16",
+      "question": "Is the Velmora Tooling Pvt Ltd income from bay 4 rent, a service rather than goods, and does it come with no obligation to return it?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R231",
+      "source": "stored 2026-10-16_1819",
+      "flagKey": "H16",
+      "question": "Is the rent received from Velmora Tooling Pvt Ltd for bay 4 shed a payment for the use of premises rather than goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R232",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P1",
+      "question": "Were the three payments of ₹1,00,00,000, ₹1,00,00,000 and ₹50,00,000 from Rajesh Mehta, labelled 'temporary funds from MD', a loan that must be repaid?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R233",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P1",
+      "question": "Were the three payments of ₹1,00,00,000, ₹1,00,00,000 and ₹50,00,000 from Rajesh Mehta, recorded as 'temporary funds from MD', a loan that must be repaid?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R234",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P1",
+      "question": "Were the three payments of ₹1,00,00,000, ₹1,00,00,000 and ₹50,00,000 from Rajesh Mehta, recorded as temporary funds from the MD, a loan that must be repaid?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R235",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P2",
+      "question": "Was the ₹60,00,000 received from Anita Mehta on 2025-04-05 a loan, or was it something else such as goods/services or a deposit?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R236",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P2",
+      "question": "Was the ₹60,00,000 received from Anita Mehta on 2025-04-05 goods or services supplied, or money given as a loan?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R237",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P2",
+      "question": "Was the ₹60,00,000 received from Anita Mehta on 2025-04-05 goods/services, a loan, or another type of receipt?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R238",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P3",
+      "question": "Was the ₹50,00,000 received from Mehta Family Trust on 2025-04-05 a loan, a supply of goods or services, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R239",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P3",
+      "question": "Was the ₹50,00,000 received from Mehta Family Trust a loan that must be repaid, or payment for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R240",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P3",
+      "question": "Was the ₹50,00,000 received from Mehta Family Trust on 2025-04-05 a loan, or was it goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R241",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P4",
+      "question": "Were the two NEFT receipts of ₹5,00,000 each from Sharma Traders a loan, a security deposit, or an advance against future supply?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R242",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P4",
+      "question": "Were the two NEFT receipts of ₹5,00,000 each from Sharma Traders a loan, or something else such as goods supplied or an advance?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R243",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P4",
+      "question": "Were the two NEFT receipts of ₹5,00,000 each from Sharma Traders a loan, and if so, what terms and approval support them?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "X30",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P5",
+      "question": "Is Bharat Fasteners registered under Udyam, and what size category does its registration certificate show?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "X31",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P5",
+      "question": "Is Bharat Fasteners registered under Udyam, and what size category does its certificate show?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R244",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P6",
+      "question": "Is Delta Rubber, a Sundry Creditors ledger with 2 entries, registered under Udyam, and if so at which size category?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R245",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P6",
+      "question": "Is Delta Rubber registered on Udyam as a Micro, Small or Medium enterprise, given it sits under Sundry Creditors with 2 entries?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R246",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P7",
+      "question": "Is Kumar Packaging registered under Udyam, given that its purchase of production materials of ₹1,90,000 is recorded under Sundry Creditors?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R247",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P7",
+      "question": "Is Kumar Packaging registered under Udyam, and if so which size category does its certificate show?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R248",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P7",
+      "question": "Is Kumar Packaging registered under Udyam, and if so, is it Micro, Small or Medium?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R249",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P8",
+      "question": "Is the Meridian Co-operative Bank term loan repayable in 60 monthly instalments from April 2025, with a repayment schedule to confirm it?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R250",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P8",
+      "question": "Does the sanction letter or repayment schedule confirm the 60 monthly instalments starting April 2025 for this term loan?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X32",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P8",
+      "question": "Was the Meridian Co-operative Bank term loan received on 2025-04-01 repayable in 60 monthly instalments from April 2025, and what does the repayment schedule show for each instalment date?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R251",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P8",
+      "question": "Does the sanction letter or repayment schedule show the full loan is repayable over 60 monthly instalments from April 2025?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R252",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P9",
+      "question": "Does the narration 'new spindle assembly installed on VMC-3' describe routine upkeep, extends life/capacity, or a new asset?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R253",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P9",
+      "question": "Was the new spindle assembly installed on VMC-3 an upgrade that extends the machine's life or capacity, or a new asset?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R254",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P9",
+      "question": "Does the narration 'new spindle assembly installed on VMC-3' describe a new asset rather than routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R255",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P10",
+      "question": "Is the Om Constructions running bill for the construction of the new shed part of a project still under construction?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R256",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P10",
+      "question": "Was the ₹1,20,00,000 paid to Om Constructions for the construction of a new shed, which is part of a project still under construction?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R257",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P10",
+      "question": "Is the Om Constructions running bill for the new shed construction part of a project still under construction, rather than an asset already ready for use?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R258",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P11",
+      "question": "Was the MPV bought from Arena Motors on 2025-09-15 a new asset rather than routine upkeep, given it was posted to Repairs & Maintenance?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X33",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P11",
+      "question": "Was the MPV bought from Arena Motors for the sales team a new asset rather than routine upkeep, and was it recorded in Repairs & Maintenance?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R259",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P11",
+      "question": "Was the MPV bought from Arena Motors for the sales team a new asset rather than routine upkeep of an existing vehicle?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R260",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P11",
+      "question": "Was the vehicle bought from Arena Motors a new asset rather than routine upkeep, given it is recorded under Repairs & Maintenance?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R261",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P13",
+      "question": "Was the ₹30,00,000 received from Kestrel General Insurance in November 2025 a payment for goods or services, or a claim settlement?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R262",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P14",
+      "question": "Is the RoDTEP credit of ₹25,00,000 in the Sales - Components ledger a payment for goods supplied, or a different kind of receipt?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R263",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P14",
+      "question": "Is the RoDTEP credit of ₹25,00,000 booked to 'Sales - Components' a goods or service supply, or is it an export incentive credit that is not a sale?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R264",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P14",
+      "question": "Is the RoDTEP credit of ₹25,00,000 from the Export Incentive Authority a payment for goods or services supplied, or some other kind of exchange?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R265",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P15",
+      "question": "Was the Sales - Components entry of ₹12,00,000 from Meridian Co-operative Bank for FD interest the receipt of an amount that is not for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R266",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P15",
+      "question": "Is the ₹12,00,000 received from Meridian Co-operative Bank on 2025-11-12 recorded in Sales - Components a sale of goods or services, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R267",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P15",
+      "question": "Was the ₹12,00,000 recorded to 'Sales - Components' from Meridian Co-operative Bank for 'FD interest' a sale of goods or services, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R268",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 credited to Sales - Components from Corvel Bank a goods or services sale, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R269",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P16",
+      "question": "Is the ₹9,00,000 entry in the Sales - Components ledger a sale of goods or services, or is it something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R270",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P16",
+      "question": "Was the ₹9,00,000 credited to Sales - Components a payment for goods or services supplied, or is it something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R271",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 received from Patel Enterprises for the sale of an old lathe machine recorded in the Sales - Components ledger a sale of a fixed asset rather than goods supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X34",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 paid to Patel Enterprises for the sale of an old lathe machine recorded under Sales - Components, and does it reflect a sale of a fixed asset rather than goods supplied?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R272",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 received from Patel Enterprises for the sale of an old lathe machine recorded in Sales - Components, a fixed asset sale rather than a goods sale?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R273",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "P17",
+      "question": "Was the ₹40,00,000 received from Patel Enterprises for the sale of an old lathe machine, recorded under Sales - Components, a sale of a fixed asset rather than goods supplied in the ordinary course?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R274",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 2025-07-05 goods or services supplied, or money only?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R275",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 2025-07-05 for goods or services supplied, or was it a loan, advance, deposit or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R276",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "A2-MIXED-AMOUNTS",
+      "question": "Was the ₹5,60,000 received from Sharma Traders on 2025-07-05 a loan, or was it for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R277",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "Was the ₹5,60,000 received from Sharma Traders by NEFT on 2025-07-05 goods or services supplied, or money received as a loan?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R278",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "Is the ₹5,60,000 received from Sharma Traders on 2025-07-05 goods or services supplied, or money only, such as a loan?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R279",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "A3-SIMILAR-NAME",
+      "question": "Was the ₹5,60,000 received from Sharma Traders by NEFT on 2025-07-05 goods or services supplied, or was it money lent to the company?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R280",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H17",
+      "question": "Were the four receipts from Sunita Rao, totalling ₹1,20,00,000 across 4 entries, a loan, or something else such as an advance or deposit?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R281",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H17",
+      "question": "Were the four receipts from Sunita Rao, totalling ₹1,20,00,000 across 4 entries, a loan that must be repaid, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X35",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H17",
+      "question": "Were the four receipts from Sunita Rao, totalling ₹1,20,00,000 across 4 entries, loans the company must repay, or something else?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "single factual question; earlier rejection was a checker false alarm or a figure code now supplies (QUESTION_ADVICE_OR_OUTCOME)"
+    },
+    {
+      "id": "R282",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H18",
+      "question": "Were the amounts received under the ledger 'Short Term Funds - Friends & Family' from Anita Mehta and Dhruv Kalsekar loans carrying interest, or was any of it a different kind of receipt?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R283",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H18",
+      "question": "Was the ₹30,00,000 received from Anita Mehta on 2025-04-21 a loan that must be repaid, or money for goods or services supplied?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X36",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H18",
+      "question": "Was the ₹30,00,000 received from Anita Mehta on 2025-04-21 a loan, and does it have to be repaid?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R284",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H18",
+      "question": "Was the money received from Dhruv Kalsekar in the 'hand loan recd - DK chq 004512' entry a loan, or was it something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R285",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H19",
+      "question": "Is Pravani Gaskets & Seals registered under Udyam, and if so as a Micro, Small or Medium enterprise?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R286",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H19",
+      "question": "Is Pravani Gaskets & Seals registered as a Micro, Small or Medium enterprise under Udyam?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R287",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H19",
+      "question": "Is Pravani Gaskets & Seals registered under Udyam, and if so, is it Micro, Small or Medium?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R288",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H20",
+      "question": "Is Tavrekar Wire Forms registered under Udyam, and if so as a Micro, Small or Medium enterprise?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "X37",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H20",
+      "question": "Is Tavrekar Wire Forms registered under Udyam, and what size category does its Udyam certificate show?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R289",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H20",
+      "question": "Is Tavrekar Wire Forms registered under Udyam, and if so, is it classed as Micro, Small or Medium?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "R290",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H20",
+      "question": "Is Tavrekar Wire Forms registered under Udyam, and if so as Micro, Small or Medium, across its 2 sundry creditor entries?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "relabelled by Swapnil 19 Oct: \"and if so, …\" asks a second question (it was verified under the earlier, looser checker)",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "X38",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H21",
+      "question": "Is the repayment schedule for this term loan included with the sanction letter, and does it show when the remaining instalments fall due after 31 March?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "asks two things"
+    },
+    {
+      "id": "R291",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H21",
+      "question": "Is there a repayment schedule for the Ashvath Sahakari Bank term loan, with instalments of EMI after the 6-month moratorium?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "X39",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H21",
+      "question": "Is the Ashvath Sahakari Bank term loan repayable in fixed instalments under a schedule that runs beyond 31 March 2027?",
+      "expect": "reject",
+      "reason": "INVENTED_DATE",
+      "category": "number",
+      "why": "year 2027 added to next 31 March"
+    },
+    {
+      "id": "R292",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H21",
+      "question": "Does the bank sanction letter or repayment schedule show the instalment dates and the final repayment date for this term loan?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R293",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H22",
+      "question": "Did the replacement of the AC sheet roofing in bay 2 restore the existing roof, or did it create a new asset?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R294",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H22",
+      "question": "Does the replacement of the AC sheet roofing in bay 2 restore the existing roof or extend its life, or is it a new asset?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R295",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H23",
+      "question": "Did the Ampervale Switchgear Works work upgrade the main LT panel to 1600A and add a new APFC panel, rather than routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R296",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H23",
+      "question": "Did the Ampervale Switchgear Works bill for the main LT panel upgrade to 1600A and new APFC panel extend the capacity of existing equipment or create a new asset?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R297",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H23",
+      "question": "Did the Ampervale Switchgear Works work upgrade the main LT panel to 1600A and add a new APFC panel, or was it routine upkeep?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R298",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H24",
+      "question": "Is the amount posted to Sales - Export from Keldane Bank and Halbrook Axle GmbH a sale of goods or services, rather than an exchange gain on foreign currency realisation?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R299",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H24",
+      "question": "Is the ₹6,20,000 credit to Sales - Export from Keldane Bank an exchange gain on realised export proceeds, or was money actually received for goods or services?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "R300",
+      "source": "stored 2026-10-16_1850",
+      "flagKey": "H24",
+      "question": "Is the amount posted to Sales - Export from Keldane Bank and Halbrook Axle GmbH a sale of goods or services, or something else?",
+      "expect": "pass",
+      "category": "stored_verified",
+      "why": "verified in a live run; assumed a good question (spot-check)"
+    },
+    {
+      "id": "S1",
+      "question": "Should the ₹8,00,000 received from Ravi Kulkarni on 2025-06-10 be reclassified as a loan?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "'should' plus 'reclassified as' tells them what treatment to apply",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S2",
+      "question": "Do you need to reclassify the Ravi Kulkarni balance out of Sundry Creditors?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "'need to reclassify' is advice",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S3",
+      "question": "Must the ₹4,00,000 received on 2025-08-22 be shown as a borrowing rather than under Sundry Creditors?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "passive 'be shown as' tells them how to present it",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S4",
+      "question": "Ought the company to accrue interest at 10% p.a. on the ₹8,00,000 received from Ravi Kulkarni?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "'ought' plus 'accrue' is a treatment instruction",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S5",
+      "question": "Please reclassify the Ravi Kulkarni ledger to loans and confirm the terms?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "an instruction to reclassify, written as a question",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S6",
+      "question": "Before reclassifying the Ravi Kulkarni balance as a loan, can you confirm whether the ₹8,00,000 carries interest at 10% p.a.?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "'before reclassifying' assumes the treatment",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S7",
+      "question": "Since no adjustment is needed, can you confirm the ₹4,00,000 received on 2025-08-22 is correct?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "states the outcome 'no adjustment is needed'",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S8",
+      "question": "We recommend treating the Ravi Kulkarni receipts as borrowings, do you agree?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "'recommend treating ... as' is advice",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S9",
+      "question": "Should interest at 10% p.a. on the ₹8,00,000 from Ravi Kulkarni be provided for in the books?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "'should' plus 'provided for' is advice",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S10",
+      "question": "Does the ₹8,00,000 from Ravi Kulkarni have to be disclosed as a related-party loan?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "an obligation form, but the verb is a treatment ('disclosed as')",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S11",
+      "question": "Can the finance team confirm the Ravi Kulkarni ledger should be presented under borrowings instead of Sundry Creditors?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "'should be presented under' is advice",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S12",
+      "question": "Given the outcome is that the Ravi Kulkarni balance is a loan, when was the ₹8,00,000 received?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "states the result ('the outcome is')",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S13",
+      "question": "Is legal review needed before the ₹4,00,000 from Ravi Kulkarni is written back?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "'legal review needed' and 'written back' are advice or outcome",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S14",
+      "question": "Does the ₹4,00,000 received on 2025-08-22 have to be booked under a loan account?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "'have to be booked under' a head is a treatment",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S15",
+      "question": "The ₹8,00,000 from Ravi Kulkarni needs to be treated as a loan, so is the 10% p.a. interest being paid?",
+      "expect": "reject",
+      "category": "advice",
+      "why": "opens with 'needs to be treated as', which is advice",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S16",
+      "question": "Must the ₹8,00,000 received from Ravi Kulkarni on 2025-06-10 be repaid?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "a factual question about the repayment obligation",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S17",
+      "question": "Does the company have to repay the ₹4,00,000 received from Ravi Kulkarni on 2025-08-22?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "'have to repay' asks a fact about an obligation",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S18",
+      "question": "Does the ₹8,00,000 received from Ravi Kulkarni on 2025-06-10 have to be returned to him?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "'have to be returned' asks a fact, not a treatment",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S19",
+      "question": "Does the ₹4,00,000 received on 2025-08-22 need to be refunded to Ravi Kulkarni?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "'need to be refunded' asks a fact about an obligation",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S20",
+      "question": "Is the ₹8,00,000 received from Ravi Kulkarni repayable on demand?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "asks about the repayment terms",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S21",
+      "question": "Was the ₹4,00,000 received on 2025-08-22 recorded under Sundry Creditors because Ravi Kulkarni supplied goods or services to the company?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "'was recorded under' asks a past fact",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S22",
+      "question": "Is there a written agreement with Ravi Kulkarni setting out the terms of the ₹8,00,000 received on 2025-06-10?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "plain factual question",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S23",
+      "question": "Who is Ravi Kulkarni in relation to the company?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "plain factual question",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S24",
+      "question": "Is the company obliged to pay interest to Ravi Kulkarni on the ₹8,00,000 received on 2025-06-10?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "asks a fact about an obligation",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S25",
+      "question": "Was the ₹8,00,000 from Ravi Kulkarni recorded under Sundry Creditors at the time it was received on 2025-06-10?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "'recorded under' as a past fact",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S26",
+      "question": "Has any part of the ₹8,00,000 received from Ravi Kulkarni on 2025-06-10 been repaid so far?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "asks a past fact",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S27",
+      "question": "Did Ravi Kulkarni require the ₹4,00,000 received on 2025-08-22 to be paid back by a fixed date?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "asks a past fact about terms",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S28",
+      "question": "Was the ₹8,00,000 from Ravi Kulkarni a loan, and what interest rate applies to it?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "two questions joined by ', and what'",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S29",
+      "question": "Is the ₹8,00,000 received on 2025-06-10 repayable? Was any of it repaid?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "two separate questions",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S30",
+      "question": "Who is Ravi Kulkarni, and why is his ledger under Sundry Creditors?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "two questions joined by ', and why'",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S31",
+      "question": "Was the ₹4,00,000 received on 2025-08-22 a loan, was it repaid?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "comma splice asking two things",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S32",
+      "question": "what is the ₹8,00,000 from Ravi Kulkarni for and when will it be repaid?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "lower-case run-on, 'and when' adds a second question",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S33",
+      "question": "Is there an agreement for the ₹8,00,000 received from Ravi Kulkarni; if so, who signed it?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "a follow-up question after a semicolon",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S34",
+      "question": "Does the ₹4,00,000 received on 2025-08-22 carry interest, and if yes, at what rate?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "conditional second question",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S35",
+      "question": "Was the ₹8,00,000 received on 2025-06-10 a loan from Ravi Kulkarni. Is interest being paid on it?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "two sentences",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S36",
+      "question": "Is Ravi Kulkarni a director? Also, is the ₹4,00,000 received on 2025-08-22 repayable?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "two questions, second starts with 'Also'",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S37",
+      "question": "what was the purpose of the ₹4,00,000 received on 2025-08-22 also has it been repaid?",
+      "expect": "reject",
+      "category": "two_part",
+      "why": "lower-case run-on joined by 'also'",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S38",
+      "question": "Was the ₹8,00,000 received from Ravi Kulkarni on 2025-06-10 a loan, an advance or something else?",
+      "expect": "pass",
+      "category": "single_ok",
+      "why": "one question with alternatives",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S39",
+      "question": "Is the interest of 10% p.a. mentioned for the ₹8,00,000 received on 2025-06-10 actually being paid to Ravi Kulkarni?",
+      "expect": "pass",
+      "category": "single_ok",
+      "why": "'p.a.' inside the sentence is an abbreviation",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S40",
+      "question": "Does the ₹4,00,000 received on 2025-08-22 relate to any supply by Ravi Kulkarni, e.g. goods or services billed to the company?",
+      "expect": "pass",
+      "category": "single_ok",
+      "why": "'e.g.' is an abbreviation, still one question",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S41",
+      "question": "Was the amount of Rs. 8,00,000 received on 2025-06-10 paid by Ravi Kulkarni personally or through an entity?",
+      "expect": "pass",
+      "category": "single_ok",
+      "why": "'Rs.' is an abbreviation; same amount as the data",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S42",
+      "question": "Is the ₹8,00,000 received on 2025-06-10 repayable to Ravi Kulkarni on demand, on a fixed date or not at all?",
+      "expect": "pass",
+      "category": "single_ok",
+      "why": "one question with three alternatives",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S43",
+      "question": "Did Mr. Kulkarni give the ₹4,00,000 received on 2025-08-22 in his personal capacity or on behalf of a business?",
+      "expect": "pass",
+      "category": "single_ok",
+      "why": "'Mr.' is an abbreviation; one question with alternatives",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S44",
+      "question": "Were the two receipts from Ravi Kulkarni given under the same arrangement?",
+      "expect": "reject",
+      "category": "number",
+      "why": "'two' is an invented count (no count supplied)",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "INVENTED_NUMBER",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S45",
+      "question": "Is the total of ₹12,00,000 received from Ravi Kulkarni repayable?",
+      "expect": "reject",
+      "category": "number",
+      "why": "invented total (the data gives no total)",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "INVENTED_NUMBER",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S46",
+      "question": "Is the ₹8,00,000 received on 2025-06-10 to be repaid by 31 March 2027?",
+      "expect": "reject",
+      "category": "number",
+      "why": "invented date and year",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "INVENTED_DATE",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S47",
+      "question": "Was the ₹4,00,000 received on 2025-08-22 a top-up of an existing loan from Ravi Kulkarni or a new one?",
+      "expect": "pass",
+      "category": "number",
+      "why": "'one' is an ordinary word, not a count",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S48",
+      "question": "Is interest at 10% p.a. actually being paid on the ₹8,00,000 received from Ravi Kulkarni?",
+      "expect": "pass",
+      "category": "number",
+      "why": "10% p.a. and ₹8,00,000 come from the data",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S49",
+      "question": "Is one of the entries in the Ravi Kulkarni ledger linked to a purchase invoice?",
+      "expect": "pass",
+      "category": "number",
+      "why": "'one of the entries' is a harmless number word",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S50",
+      "question": "Was the ₹8,00,000 received on 2025-06-10 deposited directly into the company's bank account by Ravi Kulkarni?",
+      "expect": "pass",
+      "category": "number",
+      "why": "amount and date come from the data",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S51",
+      "question": "Does interest at 12% p.a. apply to the ₹4,00,000 received from Ravi Kulkarni on 2025-08-22?",
+      "expect": "reject",
+      "category": "number",
+      "why": "12% is invented (the data says 10%)",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "INVENTED_NUMBER",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S52",
+      "question": "Is the ₹8,00,000 received on 2025-06-10 to be repaid by December 2025?",
+      "expect": "reject",
+      "category": "number",
+      "why": "the data says only 'Dec'; adding the year 2025 is invented",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "INVENTED_DATE",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S53",
+      "question": "Was the ₹8,00,000 received from Ravi Kulkarni on 2025-06-15 supported by a receipt?",
+      "expect": "reject",
+      "category": "number",
+      "why": "wrong date (the data says 2025-06-10)",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "reason": "INVENTED_DATE",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S54",
+      "question": "What did the narration \"pls reclass to loan\" on the ₹4,00,000 entry of 2025-08-22 refer to?",
+      "expect": "pass",
+      "category": "data_copy",
+      "why": "quotes the narration inside a factual question",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S55",
+      "question": "Who wrote the narration \"pls reclass to loan - RK addl funds\" on the entry dated 2025-08-22?",
+      "expect": "pass",
+      "category": "data_copy",
+      "why": "the quoted narration is data, not advice",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S56",
+      "question": "Does \"must repay by Dec\" in the narration for the ₹8,00,000 received on 2025-06-10 refer to a written repayment term agreed with Ravi Kulkarni?",
+      "expect": "pass",
+      "category": "data_copy",
+      "why": "quoted 'must repay' comes from the data",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S57",
+      "question": "Which December is meant by \"must repay by Dec\" in the narration of the entry dated 2025-06-10?",
+      "expect": "pass",
+      "category": "data_copy",
+      "why": "quotes the data and asks for the year instead of inventing it",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S58",
+      "question": "Does \"RK addl funds\" in the 2025-08-22 narration mean Ravi Kulkarni provided further money on the same terms as the ₹8,00,000?",
+      "expect": "pass",
+      "category": "data_copy",
+      "why": "quoted narration in a factual question",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S59",
+      "question": "Is the \"int 10% p.a.\" in the narration for 2025-06-10 a rate agreed in writing with Ravi Kulkarni?",
+      "expect": "pass",
+      "category": "data_copy",
+      "why": "quoted data with 'p.a.'; a factual question",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "S60",
+      "question": "Was the note \"pls reclass to loan\" acted on by anyone after the ₹4,00,000 was recorded on 2025-08-22?",
+      "expect": "pass",
+      "category": "data_copy",
+      "why": "quoted 'reclass' is data; asks a past fact",
+      "source": "independent agent (never saw the checker), 18 Oct",
+      "flagRef": "S-FLAG"
+    },
+    {
+      "id": "B1",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Were three lenders involved in the ₹8,00,000 received from Ravi Kulkarni on 2025-06-10?",
+      "expect": "reject",
+      "reason": "INVENTED_NUMBER",
+      "category": "number",
+      "why": "invented count of lenders"
+    },
+    {
+      "id": "B2",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Did all nine directors approve the ₹8,00,000 received on 2025-06-10 from Ravi Kulkarni?",
+      "expect": "reject",
+      "reason": "INVENTED_NUMBER",
+      "category": "number",
+      "why": "invented count of directors"
+    },
+    {
+      "id": "B3",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹8,00,000 received from Ravi Kulkarni repaid in eight equal parts?",
+      "expect": "reject",
+      "reason": "INVENTED_NUMBER",
+      "category": "number",
+      "why": "invented count of parts"
+    },
+    {
+      "id": "B4",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Has the loan from Ravi Kulkarni run for two cycles?",
+      "expect": "reject",
+      "reason": "INVENTED_NUMBER",
+      "category": "number",
+      "why": "invented count of cycles"
+    },
+    {
+      "id": "B5",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Did no one confirm the ₹8,00,000 received from Ravi Kulkarni on 2025-06-10?",
+      "expect": "pass",
+      "category": "number",
+      "why": "\"no one\" is an ordinary phrase, not a count"
+    },
+    {
+      "id": "B6",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was one of the entries in the Ravi Kulkarni ledger repaid in cash?",
+      "expect": "pass",
+      "category": "number",
+      "why": "\"one of the entries\" is not a count"
+    },
+    {
+      "id": "B7",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is the ₹4,00,000 received on 2025-08-22 a new loan or an old one?",
+      "expect": "pass",
+      "category": "number",
+      "why": "\"an old one\" is a pronoun"
+    },
+    {
+      "id": "B8",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹8,00,000 from Ravi Kulkarni disclosed to the auditors?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "past fact"
+    },
+    {
+      "id": "B9",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Has the loan from Ravi Kulkarni been disclosed in the Board report?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "past fact"
+    },
+    {
+      "id": "B10",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Did the company disclose the ₹8,00,000 received on 2025-06-10 to the auditors?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "past fact, base form after did"
+    },
+    {
+      "id": "B11",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Did interest accrue on the ₹8,00,000 received from Ravi Kulkarni?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "past fact, base form after did"
+    },
+    {
+      "id": "B12",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹4,00,000 received on 2025-08-22 capitalised in the fixed asset register?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "past fact"
+    },
+    {
+      "id": "B13",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹4,00,000 received on 2025-08-22 written off by December?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "past fact; December is not a year"
+    },
+    {
+      "id": "B14",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹8,00,000 from Ravi Kulkarni reclassified by the auditors earlier?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "past fact"
+    },
+    {
+      "id": "B15",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Has tax been deducted on the interest paid to Ravi Kulkarni?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "past fact; deducted is not a treatment ask"
+    },
+    {
+      "id": "B16",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Do we reclass to loan - RK addl funds?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "copies advice from the narration without quotes"
+    },
+    {
+      "id": "B17",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is it right to reclass to loan?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "asks the reader to judge a treatment"
+    },
+    {
+      "id": "B18",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Do we need to account for the ₹8,00,000 from Ravi Kulkarni as a liability?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "asks what treatment to apply"
+    },
+    {
+      "id": "B19",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is it appropriate to net the receipts from Ravi Kulkarni?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "judgement of a treatment"
+    },
+    {
+      "id": "B20",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is it better recorded in unsecured loans?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "judgement of a treatment"
+    },
+    {
+      "id": "B21",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is it correct to call it a loan?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "judgement of a treatment"
+    },
+    {
+      "id": "B22",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is it fine to leave it under Sundry Creditors?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "judgement of a treatment"
+    },
+    {
+      "id": "B23",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is it acceptable that the ₹8,00,000 sits under Sundry Creditors?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "judgement of a treatment"
+    },
+    {
+      "id": "B24",
+      "source": "builder 19 Oct, written from the independent reviewer's failure examples (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Does the ₹4,00,000 received on 2025-08-22 need to be capitalised?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "be + past participle ask"
+    },
+    {
+      "id": "C1",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Did the auditors say reclassify the receipt as a loan?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C2",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Did the auditors say reclass it to loan?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C3",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Does the auditor think reclass to loan is right?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C4",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Do the auditors prefer net it against the loan?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C5",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Did the accountant say account for it as a loan?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C6",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Did the accountant write pls reclass to loan because it was a loan?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C7",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Why does the narration say pls reclass to loan - RK addl funds for the ₹4,00,000?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C8",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Can we \"reclass to loan\" the receipt?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C9",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is it right to \"reclass to loan\" the ₹4,00,000?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C10",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Do we \"pls reclass to loan\" the receipt?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C11",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Shall we \"pls reclass to loan\" this?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C12",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Can the receipt be set-off against the loan account?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C13",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is Ravi Kulkarni's balance to be restated?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C14",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is a journal needed to move the ₹4,00,000 to loans?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C15",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is it fair to call the ₹8,00,000 a loan?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C16",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is the ₹8,00,000 better regarded as a loan?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C17",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Would a loan classification be more apt for the ₹8,00,000?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C18",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is Sundry Creditors the right home for the ₹8,00,000?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C19",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Do the auditors want it reclassified as a loan?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C20",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Does the ₹8,00,000 require provision for interest?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C21",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Could the ₹4,00,000 simply be shifted to loans?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C22",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Can the ₹4,00,000 be re-labelled as a loan?",
+      "expect": "reject",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME",
+      "category": "advice",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C23",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was half of the ₹8,00,000 repaid?",
+      "expect": "reject",
+      "reason": "INVENTED_NUMBER",
+      "category": "number",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C24",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹8,00,000 repaid twice?",
+      "expect": "reject",
+      "reason": "INVENTED_NUMBER",
+      "category": "number",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C25",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Were a dozen tranches drawn against the ₹8,00,000?",
+      "expect": "reject",
+      "reason": "INVENTED_NUMBER",
+      "category": "number",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C26",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is interest at 1% a month being paid on the ₹8,00,000?",
+      "expect": "reject",
+      "reason": "INVENTED_NUMBER",
+      "category": "number",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C27",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹8,00,000 received in March?",
+      "expect": "reject",
+      "reason": "INVENTED_DATE",
+      "category": "number",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C28",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is the ₹8,00,000 to be repaid by next March?",
+      "expect": "reject",
+      "reason": "INVENTED_DATE",
+      "category": "number",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C29",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹8,00,000 repaid last Tuesday?",
+      "expect": "reject",
+      "reason": "INVENTED_DATE",
+      "category": "number",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C30",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹8,00,000 received in June?",
+      "expect": "pass",
+      "category": "number",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C31",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is the ₹8,00,000 to be repaid by December?",
+      "expect": "pass",
+      "category": "number",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C32",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was it a loan, when was it repaid?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C33",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was it a loan: when was it repaid?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C34",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was it a loan - when was it repaid?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C35",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹8,00,000 repaid — if so, when?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C36",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹8,00,000 repaid (if so, when)?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C37",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹8,00,000 repaid but is the ₹4,00,000 still due?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C38",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was it a loan and then was it repaid?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C39",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was it a loan and if applicable which section?",
+      "expect": "reject",
+      "reason": "QUESTION_SENTENCE_COUNT",
+      "category": "two_part",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C40",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is there a remittance advice for the ₹8,00,000 received on 2025-06-10?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C41",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Is there a bank advice for the ₹4,00,000 received on 2025-08-22?",
+      "expect": "pass",
+      "category": "factual",
+      "why": "second-review probe"
+    },
+    {
+      "id": "C42",
+      "source": "builder 19 Oct, from a second reviewer's probes (not independent)",
+      "flagRef": "S-FLAG",
+      "question": "Was the ₹8,00,000 from Ravi Kulkarni received in cash, which is a service, or by bank transfer?",
+      "expect": "pass",
+      "category": "single_ok",
+      "why": "second-review probe"
+    },
+    {
+      "id": "D1",
+      "source": "stored live run 20 Oct; label by the builder after the run (single question, checker false alarm)",
+      "flagKey": "P4",
+      "question": "For the funds received from Sharma Traders by NEFT, what was the money received for: goods or services, a loan, an advance against future supply, a security deposit, or something else?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "fronted phrase before ', what was …' is one question"
+    },
+    {
+      "id": "D2",
+      "source": "stored live run 20 Oct; label by the builder after the run (single question, checker false alarm)",
+      "flagKey": "H27",
+      "question": "Across 13 entries totalling ₹36,00,000 to Pradeep Nair in Sundry Creditors, what was the money received for: goods or services, a loan, an advance against future supply, a security deposit, or something else?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "fronted phrase before ', what was …' is one question"
+    },
+    {
+      "id": "D3",
+      "source": "stored live run 20 Oct; label by the builder after the run (single question, checker false alarm)",
+      "flagKey": "H26",
+      "question": "Was the ₹50,00,000 received in ICD Receipts from Northfield Holdings Pvt Ltd on 2025-05-14T00:00:00+05:30 a loan, or was it for goods or services or another purpose?",
+      "expect": "pass",
+      "category": "false_alarm",
+      "why": "copies the stored timestamp exactly; not an invented number"
+    },
+    {
+      "id": "Y1",
+      "source": "written 2026-10-21 for ruling #33",
+      "flagKey": "P1",
+      "question": "The books show 3 receipts from the bank into Rajesh Mehta's account, totalling ₹2,50,00,000, between 5 April 2025 and 5 June 2025. The narration reads 'temporary funds from MD'. What was this money received for?",
+      "expect": "pass",
+      "category": "context_then_question",
+      "why": "R1 context line (two statements) then one open question: the chosen wording (ruling #33)"
+    },
+    {
+      "id": "Y2",
+      "source": "written 2026-10-21 for ruling #33",
+      "flagKey": "P1",
+      "question": "The books show 3 receipts from the bank into Rajesh Mehta's account, totalling ₹2,50,00,000, between 5 April 2025 and 5 June 2025. What was this money received for?",
+      "expect": "pass",
+      "category": "context_then_question",
+      "why": "one context statement then one open question"
+    },
+    {
+      "id": "Y3",
+      "source": "written 2026-10-21 for ruling #33",
+      "flagKey": "P1",
+      "question": "The books show 3 receipts from the bank into Rajesh Mehta's account, totalling ₹2,50,00,000, between 5 April 2025 and 5 June 2025. What was this money received for, and who provided it?",
+      "expect": "reject",
+      "category": "context_then_question",
+      "why": "context allowed, but the question part is still two questions",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "Y4",
+      "source": "written 2026-10-21 for ruling #33",
+      "flagKey": "P1",
+      "question": "The books show 3 receipts from the bank into Rajesh Mehta's account, totalling ₹2,50,00,000, between 5 April 2025 and 5 June 2025. Was this money received for goods, and what was it for?",
+      "expect": "reject",
+      "category": "context_then_question",
+      "why": "second question after the context",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "Y5",
+      "source": "written 2026-10-21 for ruling #33",
+      "flagKey": "P1",
+      "question": "The books show 3 receipts from the bank into Rajesh Mehta's account, totalling ₹2,50,00,000, between 5 April 2025 and 5 June 2025. The narration reads 'temporary funds from MD'. The money came in three parts. What was this money received for?",
+      "expect": "reject",
+      "category": "context_then_question",
+      "why": "three context statements are too many",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "Y6",
+      "source": "written 2026-10-21 for ruling #33",
+      "flagKey": "P1",
+      "question": "What was this money received for? The books show 3 receipts from the bank into Rajesh Mehta's account, totalling ₹2,50,00,000, between 5 April 2025 and 5 June 2025. Who provided it?",
+      "expect": "reject",
+      "category": "context_then_question",
+      "why": "a question before the statement is two questions",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "Y7",
+      "source": "written 2026-10-21 for ruling #33",
+      "flagKey": "P1",
+      "question": "The books show 3 receipts from the bank into Rajesh Mehta's account, totalling ₹2,50,00,000, between 5 April 2025 and 5 June 2025. What was this money received for, and if so when is it repaid?",
+      "expect": "reject",
+      "category": "context_then_question",
+      "why": "and if so is two questions, context or not",
+      "reason": "QUESTION_SENTENCE_COUNT"
+    },
+    {
+      "id": "Y8",
+      "source": "written 2026-10-21 for ruling #33",
+      "flagKey": "P1",
+      "question": "The books show 3 receipts from the bank into Rajesh Mehta's account, totalling ₹2,50,00,000, between 5 April 2025 and 5 June 2025. You should record this as a loan. What was this money received for?",
+      "expect": "reject",
+      "category": "context_then_question",
+      "why": "advice inside the context line is still rejected",
+      "reason": "QUESTION_ADVICE_OR_OUTCOME"
+    }
+  ]
+}

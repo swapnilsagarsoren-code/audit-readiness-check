@@ -1,0 +1,95 @@
+ledger_name,division_i_head
+Corvel Bank Current Account,Cash and cash equivalents
+Equity Share Capital,Share capital
+Sales - Components,Revenue from operations
+Repairs & Maintenance,Other expenses
+Raw Material Purchases,Cost of materials consumed
+Subcontract Processing Charges,Other expenses
+Inventory Change,Changes in inventories
+Rajesh Mehta,Short-term borrowings
+Anita Mehta,Long-term borrowings
+Mehta Family Trust,Short-term borrowings
+Sharma Traders,Short-term borrowings
+Kaveri Steel Traders,Trade payables
+Lotus Paints,Trade payables
+Bharat Fasteners,Trade payables
+Delta Rubber,Trade payables
+Kumar Packaging,Trade payables
+Sai Precision Springs,Trade payables
+Vega Castings,Trade payables
+Meridian Co-operative Bank Term Loan,Long-term borrowings; current portion: Short-term borrowings
+Unity Commercial Bank Cash Credit,Short-term borrowings
+Land,"Property, plant and equipment"
+Factory Building,"Property, plant and equipment"
+Plant & Machinery,"Property, plant and equipment"
+Vehicles,"Property, plant and equipment"
+Office Equipment,"Property, plant and equipment"
+Furniture,"Property, plant and equipment"
+Accumulated Depreciation,"Property, plant and equipment (deduction)"
+Capital Work in Progress,Capital work-in-progress
+Software,Intangible assets
+Raw Material Inventory,Inventories
+Work in Progress Inventory,Inventories
+Finished Goods Inventory,Inventories
+Stores Inventory,Inventories
+Corvel Bank Fixed Deposit,Other bank balances
+Cash in Hand,Cash and cash equivalents
+Employee Advances,Short-term loans and advances
+Supplier Advances,Short-term loans and advances
+Security Deposits,Long-term loans and advances
+Prepaid Insurance,Other current assets
+Input GST,Other current assets
+Output GST,Other current liabilities
+TDS Payable,Other current liabilities
+Salary Payable,Other current liabilities
+Audit Fee Payable,Other current liabilities
+Leave Provision,Short-term provisions
+Retained Earnings,Reserves and surplus
+Wages,Employee benefits expense
+Electricity,Other expenses
+Freight Inward,Other expenses
+Salaries,Employee benefits expense
+Rent,Other expenses
+Insurance Expense,Other expenses
+Professional Fees,Other expenses
+Bank Charges,Finance costs
+Depreciation,Depreciation and amortisation expense
+Loan Interest,Finance costs
+Office Supplies,Other expenses
+Travel Expense,Other expenses
+Other Income,Other income
+Zenvar Motors Ltd,Trade receivables
+Fenmora Components Ltd,Trade receivables
+Belvora Automotive Ltd,Trade receivables
+Cenvira Assemblies Ltd,Trade receivables
+Dalmora Mobility Ltd,Trade receivables
+Elvanta Parts Ltd,Trade receivables
+Fervani Systems Ltd,Trade receivables
+Galmira Vehicles Ltd,Trade receivables
+Henvora Components Ltd,Trade receivables
+Irvana Assemblies Ltd,Trade receivables
+Talvori Equipment Works,Trade payables
+Elvani Civil Works,Trade payables
+Avrenda Metals,Trade payables
+Belnori Alloys,Trade payables
+Cervana Castings,Trade payables
+Denvori Forgings,Trade payables
+Elnara Bearings,Trade payables
+Farsena Tubes,Trade payables
+Gervani Plates,Trade payables
+Helvora Rods,Trade payables
+Ilnori Springs,Trade payables
+Jervana Seals,Trade payables
+Kelvori Fasteners,Trade payables
+Lenvira Rubber,Trade payables
+Mervani Packaging,Trade payables
+Nolvara Steels,Trade payables
+Orvani Wires,Trade payables
+Pelnora Coatings,Trade payables
+Quervani Plastics,Trade payables
+Renvora Tools,Trade payables
+Avenor Utilities,Trade payables
+Tervana Logistics,Trade payables
+Neravo Facility Services,Trade payables
+Velora Advisory Services,Trade payables
+Unity Commercial Bank WCDL,Short-term borrowings

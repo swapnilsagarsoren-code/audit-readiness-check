@@ -1,0 +1,45 @@
+{
+  "name": "Northfield Auto Components Pvt Ltd",
+  "fy": "FY2025-26",
+  "start": "2025-04-01T00:00:00+05:30",
+  "end": "2026-03-31T23:59:59+05:30",
+  "division": "I",
+  "description": "Fictional unlisted private manufacturer of brake and suspension parts",
+  "directors": [
+    "Rajesh Mehta",
+    "Sunita Rao"
+  ],
+  "relatives": [
+    {
+      "name": "Anita Mehta",
+      "relationship": "Spouse of MD Rajesh Mehta"
+    },
+    {
+      "name": "Mehta Family Trust",
+      "relationship": "MD Rajesh Mehta is a trustee"
+    }
+  ],
+  "shareholders": [
+    "Rajesh Mehta",
+    "Sunita Rao",
+    "Northfield Holdings Pvt Ltd"
+  ],
+  "taxRate": null,
+  "taxRateSource": "synthetic input; value not supplied",
+  "taxRateDate": null,
+  "materialityInputs": {
+    "revenueBasisPoints": 100,
+    "pbtBasisPoints": 500,
+    "flagBasisPoints": 5000,
+    "trivialBasisPoints": 500
+  },
+  "covenantThresholds": {
+    "currentRatio": 1.2,
+    "debtEquity": 1.5,
+    "source": "synthetic input"
+  },
+  "rbiBankRate": null,
+  "expectedLedgerCount": 94,
+  "expectedEntryCount": 2624,
+  "expectedSupplierCount": 36
+}

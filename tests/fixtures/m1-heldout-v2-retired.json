@@ -1,0 +1,346 @@
+[
+  {
+    "flagKey": "H9",
+    "ruleId": "R1",
+    "ledgerName": "SR Funds A/c",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-09-18T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "NEFT recd from SR - wc shortfall Sept, salary wk",
+        "amountPaise": 250000000,
+        "voucherNo": "HN-20101",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-29T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "NEFT recd SR",
+        "amountPaise": 150000000,
+        "voucherNo": "HN-20102",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-12-31T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "int @9% p.a. on SR funds upto 31.12 - prov",
+        "amountPaise": 9850700,
+        "voucherNo": "HN-20103",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H10",
+    "ruleId": "R1",
+    "ledgerName": "Short Term Advances Recd",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-05-06T00:00:00+05:30",
+        "party": "Anita Mehta",
+        "narration": "RTGS recd - AM",
+        "amountPaise": 200000000,
+        "voucherNo": "HN-20104",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-05-21T00:00:00+05:30",
+        "party": "Halvorne Ventures LLP",
+        "narration": "recd agst future order?? conf w/ RM",
+        "amountPaise": 350000000,
+        "voucherNo": "HN-20105",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-07-14T00:00:00+05:30",
+        "party": "Dinesh Kolhatkar",
+        "narration": "chq recd DK - temp",
+        "amountPaise": 100000000,
+        "voucherNo": "HN-20106",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-08-02T00:00:00+05:30",
+        "party": "Anita Mehta",
+        "narration": "RTGS recd AM bal",
+        "amountPaise": 150000000,
+        "voucherNo": "HN-20107",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H11",
+    "ruleId": "R1",
+    "ledgerName": "Kiran Bhosekar",
+    "tallyGroup": "Unsecured Loans",
+    "entries": [
+      {
+        "date": "2025-04-10T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "NEFT recd KB",
+        "amountPaise": 50000000,
+        "voucherNo": "HN-20108",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-05-08T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "NEFT recd KB - May",
+        "amountPaise": 50000000,
+        "voucherNo": "HN-20109",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-06-11T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "IMPS KB",
+        "amountPaise": 25000000,
+        "voucherNo": "HN-20110",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-07-09T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "NEFT recd KB jul",
+        "amountPaise": 50000000,
+        "voucherNo": "HN-20111",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-08-12T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "RTGS KB - extra for RM purchase",
+        "amountPaise": 100000000,
+        "voucherNo": "HN-20112",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-10T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "NEFT recd KB",
+        "amountPaise": 50000000,
+        "voucherNo": "HN-20113",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-30T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "int @12% H1 net of TDS",
+        "amountPaise": 11875000,
+        "voucherNo": "HN-20114",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-10-13T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "NEFT KB oct",
+        "amountPaise": 50000000,
+        "voucherNo": "HN-20115",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-11-10T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "NEFT recd KB",
+        "amountPaise": 50000000,
+        "voucherNo": "HN-20116",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-12-09T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "chq dep KB 004412",
+        "amountPaise": 25000000,
+        "voucherNo": "HN-20117",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-01-12T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "NEFT recd KB",
+        "amountPaise": 50000000,
+        "voucherNo": "HN-20118",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-02-10T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "NEFT KB feb",
+        "amountPaise": 50000000,
+        "voucherNo": "HN-20119",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-03-31T00:00:00+05:30",
+        "party": "Kiran Bhosekar",
+        "narration": "int H2 @12% prov",
+        "amountPaise": 28640000,
+        "voucherNo": "HN-20120",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H12",
+    "ruleId": "R2",
+    "ledgerName": "Pranav Gaskets & Seals",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-05-12T00:00:00+05:30",
+        "party": "Pranav Gaskets & Seals",
+        "narration": "Purch PGS/0412 O-ring & seal kits, Udyam micro, cr 30 days",
+        "amountPaise": 48000000,
+        "voucherNo": "HN-20121",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-06-09T00:00:00+05:30",
+        "party": "Pranav Gaskets & Seals",
+        "narration": "Purch PGS/0467 dust boots 6000 nos",
+        "amountPaise": 62000000,
+        "voucherNo": "HN-20122",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-07-03T00:00:00+05:30",
+        "party": "Pranav Gaskets & Seals",
+        "narration": "NEFT pmt agst PGS/0412",
+        "amountPaise": 48000000,
+        "voucherNo": "HN-20123",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-08-28T00:00:00+05:30",
+        "party": "Pranav Gaskets & Seals",
+        "narration": "NEFT pmt PGS/0467 - held for qty diff, now cleared",
+        "amountPaise": 62000000,
+        "voucherNo": "HN-20124",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H13",
+    "ruleId": "R3",
+    "ledgerName": "Solenne Capital TL - Press Line 2",
+    "tallyGroup": "Secured Loans",
+    "entries": [
+      {
+        "date": "2025-08-20T00:00:00+05:30",
+        "party": "Solenne Capital Finance Ltd",
+        "narration": "TL disb tranche 1 - 400T press, hyp of P&M",
+        "amountPaise": 3500000000,
+        "voucherNo": "HN-20125",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-10-15T00:00:00+05:30",
+        "party": "Solenne Capital Finance Ltd",
+        "narration": "tranche 2 disb, moratorium till Jan",
+        "amountPaise": 1500000000,
+        "voucherNo": "HN-20126",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-02-05T00:00:00+05:30",
+        "party": "Solenne Capital Finance Ltd",
+        "narration": "EMI 1/48 principal portion",
+        "amountPaise": 104166700,
+        "voucherNo": "HN-20127",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H14",
+    "ruleId": "R4",
+    "ledgerName": "Repairs - Press Shop",
+    "tallyGroup": "Indirect Expenses",
+    "entries": [
+      {
+        "date": "2025-11-22T00:00:00+05:30",
+        "party": "Trivandi Hydraulics Pvt Ltd",
+        "narration": "overhaul 250T press - replacement of main hyd power pack + cyl reseal, bill TH/2526/087",
+        "amountPaise": 284000000,
+        "voucherNo": "HN-20128",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H15",
+    "ruleId": "R5",
+    "ledgerName": "Sales - Local GST 18%",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-06-14T00:00:00+05:30",
+        "party": "Ravalgaon Metal Recyclers",
+        "narration": "sale MS turning scrap 18.8 MT",
+        "amountPaise": 94000000,
+        "voucherNo": "HN-20129",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-03T00:00:00+05:30",
+        "party": "Bhaskar Iron Mart",
+        "narration": "boring chips scrap - lot 2",
+        "amountPaise": 71500000,
+        "voucherNo": "HN-20130",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-11-27T00:00:00+05:30",
+        "party": "Ravalgaon Metal Recyclers",
+        "narration": "MS scrap nov lot",
+        "amountPaise": 86000000,
+        "voucherNo": "HN-20131",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-01-19T00:00:00+05:30",
+        "party": "Halden Forge Supplies",
+        "narration": "old induction furnace 500kg sold as scrap - asset no PM/117",
+        "amountPaise": 62500000,
+        "voucherNo": "HN-20132",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H16",
+    "ruleId": "R5",
+    "ledgerName": "Sales - Job Work Charges",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-07-01T00:00:00+05:30",
+        "party": "Velmora Tooling Pvt Ltd",
+        "narration": "rent - bay 4 shed Q1 (Apr-Jun)",
+        "amountPaise": 75000000,
+        "voucherNo": "HN-20133",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-10-01T00:00:00+05:30",
+        "party": "Velmora Tooling Pvt Ltd",
+        "narration": "Q2 rent bay4",
+        "amountPaise": 75000000,
+        "voucherNo": "HN-20134",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-01-02T00:00:00+05:30",
+        "party": "Velmora Tooling Pvt Ltd",
+        "narration": "rent Q3 bay 4 incl power recovery",
+        "amountPaise": 81240000,
+        "voucherNo": "HN-20135",
+        "lineNo": 1
+      }
+    ]
+  }
+]

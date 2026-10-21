@@ -1,0 +1,338 @@
+[
+  {
+    "flagKey": "H17",
+    "ruleId": "R1",
+    "ledgerName": "Sunita Rao - Personal A/c",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-06-03T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "recd by NEFT frm SR - temp",
+        "amountPaise": 250000000,
+        "voucherNo": "HV-30101",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-06-19T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "NEFT recd - SR",
+        "amountPaise": 250000000,
+        "voucherNo": "HV-30102",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-30T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "fund trf by director for Q2 GST pymt",
+        "amountPaise": 500000000,
+        "voucherNo": "HV-30103",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-12-15T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "recd frm S Rao, to be adj",
+        "amountPaise": 200000000,
+        "voucherNo": "HV-30104",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H18",
+    "ruleId": "R1",
+    "ledgerName": "Short Term Funds - Friends & Family",
+    "tallyGroup": "Unsecured Loans",
+    "entries": [
+      {
+        "date": "2025-04-21T00:00:00+05:30",
+        "party": "Anita Mehta",
+        "narration": "loan recd frm AM via RTGS",
+        "amountPaise": 300000000,
+        "voucherNo": "HV-30105",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-07-11T00:00:00+05:30",
+        "party": "Dhruv Kalsekar",
+        "narration": "hand loan recd - DK chq 004512",
+        "amountPaise": 150000000,
+        "voucherNo": "HV-30106",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-10-01T00:00:00+05:30",
+        "party": "Anita Mehta",
+        "narration": "int @9% H1 on AM loan",
+        "amountPaise": 11980000,
+        "voucherNo": "HV-30107",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-10-01T00:00:00+05:30",
+        "party": "Dhruv Kalsekar",
+        "narration": "int H1 DK",
+        "amountPaise": 3033000,
+        "voucherNo": "HV-30108",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-02-10T00:00:00+05:30",
+        "party": "Dhruv Kalsekar",
+        "narration": "addl amt recd DK neft",
+        "amountPaise": 100000000,
+        "voucherNo": "HV-30109",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H19",
+    "ruleId": "R2",
+    "ledgerName": "Pravani Gaskets & Seals",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-05-06T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "Bill PGS/0518 - o-rings 5000 nos",
+        "amountPaise": 28400000,
+        "voucherNo": "HV-30110",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-05-28T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "Bill PGS/0561 - caliper seals",
+        "amountPaise": 31250000,
+        "voucherNo": "HV-30111",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-06-27T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "NEFT pymt agst PGS/0518",
+        "amountPaise": 28400000,
+        "voucherNo": "HV-30112",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-07-09T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "Bill PGS/0644 - dust boots",
+        "amountPaise": 19680000,
+        "voucherNo": "HV-30113",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-07-18T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "NEFT pymt agst PGS/0561",
+        "amountPaise": 31250000,
+        "voucherNo": "HV-30114",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-08-21T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "Bill PGS/0702 - piston seals + o-rings",
+        "amountPaise": 40500000,
+        "voucherNo": "HV-30115",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-08-29T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "NEFT pymt agst PGS/0644",
+        "amountPaise": 19680000,
+        "voucherNo": "HV-30116",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-10-03T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "Bill PGS/0779 - caliper seals",
+        "amountPaise": 25830000,
+        "voucherNo": "HV-30117",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-10-24T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "NEFT pymt agst PGS/0702",
+        "amountPaise": 40500000,
+        "voucherNo": "HV-30118",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-11-14T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "Bill PGS/0833 - dust boots, gaskets",
+        "amountPaise": 34700000,
+        "voucherNo": "HV-30119",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-11-21T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "NEFT pymt agst PGS/0779",
+        "amountPaise": 25830000,
+        "voucherNo": "HV-30120",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-01-09T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "NEFT pymt agst PGS/0833",
+        "amountPaise": 34700000,
+        "voucherNo": "HV-30121",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-01-22T00:00:00+05:30",
+        "party": "Pravani Gaskets & Seals",
+        "narration": "Bill PGS/0907 - o-rings 6000 nos",
+        "amountPaise": 29990000,
+        "voucherNo": "HV-30122",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H20",
+    "ruleId": "R2",
+    "ledgerName": "Tavrekar Wire Forms",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-12-02T00:00:00+05:30",
+        "party": "Tavrekar Wire Forms",
+        "narration": "Bill TWF/226 - clip springs",
+        "amountPaise": 14860000,
+        "voucherNo": "HV-30123",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-01-05T00:00:00+05:30",
+        "party": "Tavrekar Wire Forms",
+        "narration": "Bill TWF/241 - anti-rattle clips",
+        "amountPaise": 9640000,
+        "voucherNo": "HV-30124",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H21",
+    "ruleId": "R3",
+    "ledgerName": "Ashvath Sahakari Bank Term Loan - Press Shop",
+    "tallyGroup": "Secured Loans",
+    "entries": [
+      {
+        "date": "2025-08-14T00:00:00+05:30",
+        "party": "Ashvath Sahakari Bank",
+        "narration": "TL disb tranche 1 - 250T press, sanc ASB/TL/2025/118, 48 EMI aftr 6m morat",
+        "amountPaise": 3500000000,
+        "voucherNo": "HV-30125",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-11-20T00:00:00+05:30",
+        "party": "Ashvath Sahakari Bank",
+        "narration": "TL disb tranche 2 - tooling",
+        "amountPaise": 1500000000,
+        "voucherNo": "HV-30126",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-02-14T00:00:00+05:30",
+        "party": "Ashvath Sahakari Bank",
+        "narration": "EMI 1 debited (prin+int)",
+        "amountPaise": 126800000,
+        "voucherNo": "HV-30127",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-03-14T00:00:00+05:30",
+        "party": "Ashvath Sahakari Bank",
+        "narration": "EMI 2 dr by bank",
+        "amountPaise": 126800000,
+        "voucherNo": "HV-30128",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H22",
+    "ruleId": "R4",
+    "ledgerName": "Repairs - Factory Building",
+    "tallyGroup": "Indirect Expenses",
+    "entries": [
+      {
+        "date": "2025-09-08T00:00:00+05:30",
+        "party": "Sheetwell Roofing Co",
+        "narration": "replacement of AC sheet roofing bay 2 - full",
+        "amountPaise": 284000000,
+        "voucherNo": "HV-30129",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-12-17T00:00:00+05:30",
+        "party": "Ratnadeep Struct-Fab",
+        "narration": "supply & installation new crane gantry rails 10T",
+        "amountPaise": 247500000,
+        "voucherNo": "HV-30130",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H23",
+    "ruleId": "R4",
+    "ledgerName": "Repairs - Electrical Installations",
+    "tallyGroup": "Indirect Expenses",
+    "entries": [
+      {
+        "date": "2026-03-27T00:00:00+05:30",
+        "party": "Ampervale Switchgear Works",
+        "narration": "upgrade main LT panel to 1600A + new APFC panel, RA bill final",
+        "amountPaise": 314000000,
+        "voucherNo": "HV-30131",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H24",
+    "ruleId": "R5",
+    "ledgerName": "Sales - Export",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-07-31T00:00:00+05:30",
+        "party": "Keldane Bank",
+        "narration": "exch gain on realisation inv EXP/031 USD",
+        "amountPaise": 62000000,
+        "voucherNo": "HV-30132",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-11-28T00:00:00+05:30",
+        "party": "Keldane Bank",
+        "narration": "exch diff gain EXP/058",
+        "amountPaise": 48000000,
+        "voucherNo": "HV-30133",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-02-26T00:00:00+05:30",
+        "party": "Halbrook Axle GmbH",
+        "narration": "exchange gain - realisation EXP/077 EUR",
+        "amountPaise": 91000000,
+        "voucherNo": "HV-30134",
+        "lineNo": 2
+      }
+    ]
+  }
+]

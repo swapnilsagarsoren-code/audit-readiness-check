@@ -1,0 +1,23 @@
+import { defineSchema, defineTable } from 'convex/server';
+import { v } from 'convex/values';
+export const companyFields = {
+  name:v.string(), directors:v.array(v.string()), taxRate:v.union(v.number(),v.null()),
+  materialityInputs:v.object({revenueBasisPoints:v.number(),pbtBasisPoints:v.number(),flagBasisPoints:v.number(),trivialBasisPoints:v.number()}),
+  fy:v.optional(v.string()), start:v.optional(v.string()), end:v.optional(v.string()), division:v.optional(v.string()), description:v.optional(v.string()),
+  relatives:v.optional(v.array(v.object({name:v.string(),relationship:v.string()}))), shareholders:v.optional(v.array(v.string())),
+  taxRateSource:v.optional(v.string()), taxRateDate:v.optional(v.union(v.string(),v.null())),
+  covenantThresholds:v.optional(v.object({currentRatio:v.number(),debtEquity:v.number(),source:v.string()})),rbiBankRate:v.optional(v.null()),
+  expectedLedgerCount:v.optional(v.number()),expectedEntryCount:v.optional(v.number()),expectedSupplierCount:v.optional(v.number()),
+};
+export const ledgerFields={ledger_name:v.string(),tally_group:v.string(),opening_dr:v.optional(v.number()),opening_cr:v.optional(v.number())};
+export const entryFields={date:v.string(),party:v.string(),narration:v.string(),amount:v.number(),voucher_type:v.string(),voucher_no:v.optional(v.string()),line_no:v.optional(v.number()),ledger:v.optional(v.string()),dr:v.optional(v.number()),cr:v.optional(v.number()),entered_by:v.optional(v.string()),entered_at:v.optional(v.string())};
+export const supplierFields={supplier:v.string(),msme_status:v.string(),written_credit_days:v.union(v.number(),v.null())};
+export default defineSchema({
+  company:defineTable(companyFields).index('by_name',['name']),
+  period:defineTable({fy:v.string(),start:v.optional(v.string()),end:v.optional(v.string()),companyName:v.optional(v.string())}).index('by_fy',['fy']),
+  ledger:defineTable(ledgerFields).index('by_name',['ledger_name']),
+  entry:defineTable(entryFields).index('by_voucher_line',['voucher_no','line_no']),
+  supplier:defineTable(supplierFields).index('by_name',['supplier']),
+  rule:defineTable({id:v.string(),version:v.string(),effectiveFrom:v.string(),fy:v.string()}),
+  rbiBankRate:defineTable({value:v.union(v.number(),v.null()),date:v.union(v.string(),v.null()),sourceUrl:v.union(v.string(),v.null())}),
+});

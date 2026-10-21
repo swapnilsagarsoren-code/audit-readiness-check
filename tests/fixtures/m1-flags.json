@@ -1,0 +1,378 @@
+[
+  {
+    "flagKey": "P1",
+    "ruleId": "R1",
+    "ledgerName": "Rajesh Mehta",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-04-05T00:00:00+05:30",
+        "party": "Rajesh Mehta",
+        "narration": "temporary funds from MD",
+        "amountPaise": 1000000000,
+        "voucherNo": "NF-00001",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-05-05T00:00:00+05:30",
+        "party": "Rajesh Mehta",
+        "narration": "temporary funds from MD",
+        "amountPaise": 1000000000,
+        "voucherNo": "NF-00002",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-06-05T00:00:00+05:30",
+        "party": "Rajesh Mehta",
+        "narration": "temporary funds from MD",
+        "amountPaise": 500000000,
+        "voucherNo": "NF-00003",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "P2",
+    "ruleId": "R1",
+    "ledgerName": "Anita Mehta",
+    "tallyGroup": "Unsecured Loans",
+    "entries": [
+      {
+        "date": "2025-04-05T00:00:00+05:30",
+        "party": "Anita Mehta",
+        "narration": "loan recd",
+        "amountPaise": 600000000,
+        "voucherNo": "NF-00004",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "P3",
+    "ruleId": "R1",
+    "ledgerName": "Mehta Family Trust",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-04-05T00:00:00+05:30",
+        "party": "Mehta Family Trust",
+        "narration": "recd for working capital",
+        "amountPaise": 500000000,
+        "voucherNo": "NF-00005",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "P4",
+    "ruleId": "R1",
+    "ledgerName": "Sharma Traders",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-04-05T00:00:00+05:30",
+        "party": "Sharma Traders",
+        "narration": "funds received by NEFT",
+        "amountPaise": 50000000,
+        "voucherNo": "NF-00006",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-05-05T00:00:00+05:30",
+        "party": "Sharma Traders",
+        "narration": "funds received by NEFT",
+        "amountPaise": 50000000,
+        "voucherNo": "NF-00007",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "P5",
+    "ruleId": "R2",
+    "ledgerName": "Bharat Fasteners",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-04-01T00:00:00+05:30",
+        "party": "Bharat Fasteners",
+        "narration": "Purchase of fasteners",
+        "amountPaise": 56000000,
+        "voucherNo": "NF-00012",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-06-08T00:00:00+05:30",
+        "party": "Bharat Fasteners",
+        "narration": "Payment against invoice NF-00012",
+        "amountPaise": 56000000,
+        "voucherNo": "NF-00013",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-05-01T00:00:00+05:30",
+        "party": "Bharat Fasteners",
+        "narration": "Purchase of fasteners",
+        "amountPaise": 56000000,
+        "voucherNo": "NF-00014",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-05-31T00:00:00+05:30",
+        "party": "Bharat Fasteners",
+        "narration": "Payment against invoice NF-00014",
+        "amountPaise": 56000000,
+        "voucherNo": "NF-00015",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-06-01T00:00:00+05:30",
+        "party": "Bharat Fasteners",
+        "narration": "Purchase of fasteners",
+        "amountPaise": 56000000,
+        "voucherNo": "NF-00016",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-07-01T00:00:00+05:30",
+        "party": "Bharat Fasteners",
+        "narration": "Payment against invoice NF-00016",
+        "amountPaise": 56000000,
+        "voucherNo": "NF-00017",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-07-01T00:00:00+05:30",
+        "party": "Bharat Fasteners",
+        "narration": "Purchase of fasteners",
+        "amountPaise": 56000000,
+        "voucherNo": "NF-00018",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-07-31T00:00:00+05:30",
+        "party": "Bharat Fasteners",
+        "narration": "Payment against invoice NF-00018",
+        "amountPaise": 56000000,
+        "voucherNo": "NF-00019",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-08-01T00:00:00+05:30",
+        "party": "Bharat Fasteners",
+        "narration": "Purchase of fasteners",
+        "amountPaise": 56000000,
+        "voucherNo": "NF-00020",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-08-31T00:00:00+05:30",
+        "party": "Bharat Fasteners",
+        "narration": "Payment against invoice NF-00020",
+        "amountPaise": 56000000,
+        "voucherNo": "NF-00021",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "P6",
+    "ruleId": "R2",
+    "ledgerName": "Delta Rubber",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-06-01T00:00:00+05:30",
+        "party": "Delta Rubber",
+        "narration": "Purchase of production materials",
+        "amountPaise": 80000000,
+        "voucherNo": "NF-00032",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-07-01T00:00:00+05:30",
+        "party": "Delta Rubber",
+        "narration": "Payment against invoice NF-00032",
+        "amountPaise": 80000000,
+        "voucherNo": "NF-00033",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "P7",
+    "ruleId": "R2",
+    "ledgerName": "Kumar Packaging",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2026-02-07T00:00:00+05:30",
+        "party": "Kumar Packaging",
+        "narration": "Purchase of production materials",
+        "amountPaise": 19000000,
+        "voucherNo": "NF-00034",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "P8",
+    "ruleId": "R3",
+    "ledgerName": "Meridian Co-operative Bank Term Loan",
+    "tallyGroup": "Secured Loans",
+    "entries": [
+      {
+        "date": "2025-04-01T00:00:00+05:30",
+        "party": "Meridian Co-operative Bank",
+        "narration": "Term loan received; 60 monthly instalments from Apr 2025",
+        "amountPaise": 12000000000,
+        "voucherNo": "NF-00039",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "P9",
+    "ruleId": "R4",
+    "ledgerName": "Repairs & Maintenance",
+    "tallyGroup": "Indirect Expenses",
+    "entries": [
+      {
+        "date": "2025-09-15T00:00:00+05:30",
+        "party": "Kaveri Machine Tools",
+        "narration": "new spindle assembly installed on VMC-3",
+        "amountPaise": 380000000,
+        "voucherNo": "NF-00053",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "P10",
+    "ruleId": "R4",
+    "ledgerName": "Repairs & Maintenance",
+    "tallyGroup": "Indirect Expenses",
+    "entries": [
+      {
+        "date": "2025-09-15T00:00:00+05:30",
+        "party": "Om Constructions",
+        "narration": "construction of new shed – running bill 2",
+        "amountPaise": 1200000000,
+        "voucherNo": "NF-00054",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "P11",
+    "ruleId": "R4",
+    "ledgerName": "Repairs & Maintenance",
+    "tallyGroup": "Indirect Expenses",
+    "entries": [
+      {
+        "date": "2025-09-15T00:00:00+05:30",
+        "party": "Arena Motors",
+        "narration": "purchase of new MPV for sales team",
+        "amountPaise": 220000000,
+        "voucherNo": "NF-00055",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "P12",
+    "ruleId": "R5",
+    "ledgerName": "Sales - Components",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-11-12T00:00:00+05:30",
+        "party": "Gupta Scrap Dealers",
+        "narration": "sale of MS scrap",
+        "amountPaise": 450000000,
+        "voucherNo": "NF-00058",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "P13",
+    "ruleId": "R5",
+    "ledgerName": "Sales - Components",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-11-12T00:00:00+05:30",
+        "party": "Kestrel General Insurance",
+        "narration": "claim recd – fire at stores",
+        "amountPaise": 300000000,
+        "voucherNo": "NF-00059",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "P14",
+    "ruleId": "R5",
+    "ledgerName": "Sales - Components",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-11-12T00:00:00+05:30",
+        "party": "Export Incentive Authority",
+        "narration": "RoDTEP credit",
+        "amountPaise": 250000000,
+        "voucherNo": "NF-00060",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "P15",
+    "ruleId": "R5",
+    "ledgerName": "Sales - Components",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-11-12T00:00:00+05:30",
+        "party": "Meridian Co-operative Bank",
+        "narration": "FD interest",
+        "amountPaise": 120000000,
+        "voucherNo": "NF-00061",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "P16",
+    "ruleId": "R5",
+    "ledgerName": "Sales - Components",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-11-12T00:00:00+05:30",
+        "party": "Corvel Bank",
+        "narration": "exchange gain on USD receivable",
+        "amountPaise": 90000000,
+        "voucherNo": "NF-00062",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "P17",
+    "ruleId": "R5",
+    "ledgerName": "Sales - Components",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-11-12T00:00:00+05:30",
+        "party": "Patel Enterprises",
+        "narration": "sale of old lathe machine",
+        "amountPaise": 400000000,
+        "voucherNo": "NF-00063",
+        "lineNo": 2
+      }
+    ]
+  }
+]

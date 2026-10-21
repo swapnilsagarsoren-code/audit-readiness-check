@@ -1,0 +1,306 @@
+[
+  {
+    "flagKey": "H25",
+    "ruleId": "R1",
+    "ledgerName": "Sunita Rao",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-06-12T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "NEFT recd SR - funds for stock buying",
+        "amountPaise": 400000000,
+        "voucherNo": "HW-40101",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-03T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "recd frm SR NEFT bal fund",
+        "amountPaise": 250000000,
+        "voucherNo": "HW-40102",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-12-18T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "NEFT SR addl funds",
+        "amountPaise": 150000000,
+        "voucherNo": "HW-40103",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H26",
+    "ruleId": "R1",
+    "ledgerName": "ICD Receipts",
+    "tallyGroup": "Unsecured Loans",
+    "entries": [
+      {
+        "date": "2025-05-14T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "recd from holdco NEFT",
+        "amountPaise": 500000000,
+        "voucherNo": "HW-40201",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-08-21T00:00:00+05:30",
+        "party": "Quillon Infra Pvt Ltd",
+        "narration": "funds recd NEFT ref QI/0821",
+        "amountPaise": 300000000,
+        "voucherNo": "HW-40202",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-11-10T00:00:00+05:30",
+        "party": "Quillon Infra Pvt Ltd",
+        "narration": "2nd part recd QI NEFT",
+        "amountPaise": 200000000,
+        "voucherNo": "HW-40203",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H27",
+    "ruleId": "R1",
+    "ledgerName": "Pradeep Nair",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-04-07T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "NEFT PN mthly",
+        "amountPaise": 25000000,
+        "voucherNo": "HW-40301",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-05-06T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "NEFT PN mthly",
+        "amountPaise": 25000000,
+        "voucherNo": "HW-40302",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-06-05T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "NEFT PN mthly",
+        "amountPaise": 25000000,
+        "voucherNo": "HW-40303",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-07-07T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "NEFT PN mthly",
+        "amountPaise": 25000000,
+        "voucherNo": "HW-40304",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-08-05T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "NEFT PN mthly",
+        "amountPaise": 25000000,
+        "voucherNo": "HW-40305",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-05T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "NEFT PN mthly",
+        "amountPaise": 25000000,
+        "voucherNo": "HW-40306",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-22T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "PN extra NEFT - festive",
+        "amountPaise": 60000000,
+        "voucherNo": "HW-40307",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-10-06T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "NEFT PN mthly",
+        "amountPaise": 25000000,
+        "voucherNo": "HW-40308",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-11-05T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "NEFT PN mthly",
+        "amountPaise": 25000000,
+        "voucherNo": "HW-40309",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-12-05T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "NEFT PN mthly",
+        "amountPaise": 25000000,
+        "voucherNo": "HW-40310",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-01-06T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "NEFT PN mthly",
+        "amountPaise": 25000000,
+        "voucherNo": "HW-40311",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-02-05T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "NEFT PN mthly",
+        "amountPaise": 25000000,
+        "voucherNo": "HW-40312",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-03-05T00:00:00+05:30",
+        "party": "Pradeep Nair",
+        "narration": "NEFT PN mthly",
+        "amountPaise": 25000000,
+        "voucherNo": "HW-40313",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H28",
+    "ruleId": "R2",
+    "ledgerName": "Job Work Payable",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-07-24T00:00:00+05:30",
+        "party": "Aarav Tooling Works",
+        "narration": "Pmt vs inv ATW/77 dt 22.05.25 (Udyam Micro per vendor form)",
+        "amountPaise": 64000000,
+        "voucherNo": "HW-40401",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-15T00:00:00+05:30",
+        "party": "Pinecrest Heat Treaters",
+        "narration": "Inv PH/310 heat treat job work dt 28.07.25 - still o/s",
+        "amountPaise": 32000000,
+        "voucherNo": "HW-40402",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H29",
+    "ruleId": "R2",
+    "ledgerName": "Zephyr Wire Harness",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-08-04T00:00:00+05:30",
+        "party": "Zephyr Wire Harness",
+        "narration": "Inv ZW/221 harness sets, 30 days cr per PO (Small)",
+        "amountPaise": 140000000,
+        "voucherNo": "HW-40501",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-09-14T00:00:00+05:30",
+        "party": "Zephyr Wire Harness",
+        "narration": "Paid vs ZW/221 NEFT",
+        "amountPaise": 140000000,
+        "voucherNo": "HW-40502",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H30",
+    "ruleId": "R3",
+    "ledgerName": "Halden Co-operative Bank Term Loan II",
+    "tallyGroup": "Secured Loans",
+    "entries": [
+      {
+        "date": "2025-07-10T00:00:00+05:30",
+        "party": "Halden Co-operative Bank",
+        "narration": "TL-II disbursed 1st tranche, 84 EMIs from Jan-26",
+        "amountPaise": 5000000000,
+        "voucherNo": "HW-40601",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-09-22T00:00:00+05:30",
+        "party": "Halden Co-operative Bank",
+        "narration": "TL-II 2nd tranche recd plant exp",
+        "amountPaise": 3000000000,
+        "voucherNo": "HW-40602",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H31",
+    "ruleId": "R4",
+    "ledgerName": "Repairs & Maintenance - Plant",
+    "tallyGroup": "Indirect Expenses",
+    "entries": [
+      {
+        "date": "2025-10-09T00:00:00+05:30",
+        "party": "Tessel Hydraulics",
+        "narration": "replacement of hydraulic ram & cylinder press-2",
+        "amountPaise": 165000000,
+        "voucherNo": "HW-40701",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-11-20T00:00:00+05:30",
+        "party": "Tessel Hydraulics",
+        "narration": "upgrade of PLC control panel press-2",
+        "amountPaise": 92500000,
+        "voucherNo": "HW-40702",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H32",
+    "ruleId": "R5",
+    "ledgerName": "Sales - Domestic",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-06-27T00:00:00+05:30",
+        "party": "Orchid Metal Recyclers",
+        "narration": "MS scrap sale 2 loads",
+        "amountPaise": 140000000,
+        "voucherNo": "HW-40801",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-10-30T00:00:00+05:30",
+        "party": "Halcyon Assurance Co",
+        "narration": "claim settlement recd - flood damage godown",
+        "amountPaise": 180000000,
+        "voucherNo": "HW-40802",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-02-12T00:00:00+05:30",
+        "party": "Tidewater Forex Bank",
+        "narration": "exch gain EUR receivable realised",
+        "amountPaise": 64000000,
+        "voucherNo": "HW-40803",
+        "lineNo": 2
+      }
+    ]
+  }
+]

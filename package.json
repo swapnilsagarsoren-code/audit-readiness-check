@@ -1,0 +1,38 @@
+{
+  "name": "audit-readiness-app",
+  "private": true,
+  "license": "MIT",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && tsc --project convex/tsconfig.json && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "generate:synthetic": "tsx scripts/generate-synthetic.ts",
+    "test": "node --import tsx --test --test-reporter=spec tests/unit/*.test.ts",
+    "test:browser": "playwright test --reporter=list",
+    "seed:dev": "node scripts/seed-dev.mjs",
+    "build:m1-flags": "tsx scripts/build-m1-flags.ts",
+    "eval:m1": "node --import tsx scripts/eval-m1.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "convex": "1.46.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.3",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "6.1.1",
+    "oxlint": "1.81.0",
+    "typescript": "6.0.2",
+    "vite": "8.3.4",
+    "tsx": "4.23.15",
+    "@playwright/test": "1.64.0"
+  },
+  "engines": {
+    "node": "24.15.0"
+  }
+}

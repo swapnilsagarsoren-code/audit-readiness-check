@@ -1,0 +1,378 @@
+[
+  {
+    "flagKey": "H1",
+    "ruleId": "R1",
+    "ledgerName": "Sunita Rao",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-05-14T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "recd frm Sunita Rao NEFT - short term funds for GST pymt",
+        "amountPaise": 150000000,
+        "voucherNo": "HO-10101",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-07-02T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "NEFT recd - S Rao",
+        "amountPaise": 200000000,
+        "voucherNo": "HO-10102",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-09-19T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "amt recd from director a/c to bank",
+        "amountPaise": 100000000,
+        "voucherNo": "HO-10103",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-01-08T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "recd NEFT Sunita Rao - adv",
+        "amountPaise": 250000000,
+        "voucherNo": "HO-10104",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H2",
+    "ruleId": "R1",
+    "ledgerName": "Sundry Creditors - Others (HO)",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-06-11T00:00:00+05:30",
+        "party": "Anita Mehta",
+        "narration": "NEFT recd - A Mehta",
+        "amountPaise": 100000000,
+        "voucherNo": "HO-10201",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-08-23T00:00:00+05:30",
+        "party": "Pravin Kolhatkar",
+        "narration": "recd frm P Kolhatkar RTGS, to be adj",
+        "amountPaise": 300000000,
+        "voucherNo": "HO-10202",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-10-03T00:00:00+05:30",
+        "party": "Anita Mehta",
+        "narration": "amt recd - family funds",
+        "amountPaise": 150000000,
+        "voucherNo": "HO-10203",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-12-15T00:00:00+05:30",
+        "party": "Pravin Kolhatkar",
+        "narration": "RTGS recd P.K.",
+        "amountPaise": 200000000,
+        "voucherNo": "HO-10204",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-02-27T00:00:00+05:30",
+        "party": "Anita Mehta",
+        "narration": "recd NEFT",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10205",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H3",
+    "ruleId": "R1",
+    "ledgerName": "Tolani Harshvardhan",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-04-07T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "recd frm H Tolani NEFT",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10301",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-05-06T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "NEFT-HT-monthly",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10302",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-06-05T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "funds recd - H.T.",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10303",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-07-07T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "Tolani NEFT recd",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10304",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-08-06T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "recd NEFT HT aug",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10305",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-09-05T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "NEFT recd frm Tolani",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10306",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-10-07T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "HT funds oct - NEFT",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10307",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-11-06T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "recd frm H Tolani",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10308",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-12-05T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "NEFT-HT-dec",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10309",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-01-07T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "Tolani monthly recd NEFT",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10310",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-02-05T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "recd NEFT H.T.",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10311",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-03-06T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "NEFT recd - HT mar",
+        "amountPaise": 50000000,
+        "voucherNo": "HO-10312",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-03-31T00:00:00+05:30",
+        "party": "Harshvardhan Tolani",
+        "narration": "int @10% pa on funds recd - FY25-26 prov",
+        "amountPaise": 32500000,
+        "voucherNo": "HO-10313",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H4",
+    "ruleId": "R2",
+    "ledgerName": "Pinnacle Gaskets & Seals",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-07-04T00:00:00+05:30",
+        "party": "Pinnacle Gaskets & Seals",
+        "narration": "bill no. PGS/214 - nitrile gaskets",
+        "amountPaise": 42000000,
+        "voucherNo": "HO-10401",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-07-26T00:00:00+05:30",
+        "party": "Pinnacle Gaskets & Seals",
+        "narration": "bill no. PGS/231 - O rings asstd",
+        "amountPaise": 27500000,
+        "voucherNo": "HO-10402",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-22T00:00:00+05:30",
+        "party": "Pinnacle Gaskets & Seals",
+        "narration": "NEFT paid agst PGS/214",
+        "amountPaise": 42000000,
+        "voucherNo": "HO-10403",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-10-30T00:00:00+05:30",
+        "party": "Pinnacle Gaskets & Seals",
+        "narration": "pmt agst PGS/231 - NEFT",
+        "amountPaise": 27500000,
+        "voucherNo": "HO-10404",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H5",
+    "ruleId": "R3",
+    "ledgerName": "Halvorsen Urban Bank Term Loan - Press Line",
+    "tallyGroup": "Secured Loans",
+    "entries": [
+      {
+        "date": "2025-08-12T00:00:00+05:30",
+        "party": "Halvorsen Urban Bank",
+        "narration": "TL disbursed - 1st tranche, press line capex",
+        "amountPaise": 3000000000,
+        "voucherNo": "HO-10501",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-11-20T00:00:00+05:30",
+        "party": "Halvorsen Urban Bank",
+        "narration": "2nd tranche recd TL a/c",
+        "amountPaise": 2000000000,
+        "voucherNo": "HO-10502",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-01-05T00:00:00+05:30",
+        "party": "Halvorsen Urban Bank",
+        "narration": "EMI 1/48 debited by bank",
+        "amountPaise": 135000000,
+        "voucherNo": "HO-10503",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-02-05T00:00:00+05:30",
+        "party": "Halvorsen Urban Bank",
+        "narration": "EMI 2/48",
+        "amountPaise": 135000000,
+        "voucherNo": "HO-10504",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-03-05T00:00:00+05:30",
+        "party": "Halvorsen Urban Bank",
+        "narration": "EMI 3/48 dr",
+        "amountPaise": 135000000,
+        "voucherNo": "HO-10505",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H6",
+    "ruleId": "R4",
+    "ledgerName": "Repairs & Maintenance - Plant",
+    "tallyGroup": "Indirect Expenses",
+    "entries": [
+      {
+        "date": "2025-10-17T00:00:00+05:30",
+        "party": "Trivani Hydraulic Systems",
+        "narration": "replacement of hydraulic power pack - 250T press, bill TH/88",
+        "amountPaise": 340000000,
+        "voucherNo": "HO-10601",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-11-29T00:00:00+05:30",
+        "party": "Trivani Hydraulic Systems",
+        "narration": "upgrade of PLC controls 250T press, bill TH/97",
+        "amountPaise": 238000000,
+        "voucherNo": "HO-10602",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H7",
+    "ruleId": "R5",
+    "ledgerName": "Sales - Domestic GST 18%",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-09-09T00:00:00+05:30",
+        "party": "Durgesh Engineering Works",
+        "narration": "sale of old CNC machine (VTL-1) inv NAC/25/883",
+        "amountPaise": 180000000,
+        "voucherNo": "HO-10701",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-11-01T00:00:00+05:30",
+        "party": "Kesar Warehousing Co",
+        "narration": "godown rent recd - Oct 25",
+        "amountPaise": 24000000,
+        "voucherNo": "HO-10702",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-12-01T00:00:00+05:30",
+        "party": "Kesar Warehousing Co",
+        "narration": "rent for Nov godown",
+        "amountPaise": 24000000,
+        "voucherNo": "HO-10703",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-01-01T00:00:00+05:30",
+        "party": "Kesar Warehousing Co",
+        "narration": "godown rent Dec recd",
+        "amountPaise": 24000000,
+        "voucherNo": "HO-10704",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H8",
+    "ruleId": "R5",
+    "ledgerName": "Export Sales - USD",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-06-18T00:00:00+05:30",
+        "party": "Brightwater Exchange Bank",
+        "narration": "exchange gain on realisn agst EXP/0412",
+        "amountPaise": 64000000,
+        "voucherNo": "HO-10801",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-11-27T00:00:00+05:30",
+        "party": "Brightwater Exchange Bank",
+        "narration": "EXP/0497 realised - exchange gain",
+        "amountPaise": 31550000,
+        "voucherNo": "HO-10802",
+        "lineNo": 2
+      }
+    ]
+  }
+]

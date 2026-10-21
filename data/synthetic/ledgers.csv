@@ -1,0 +1,95 @@
+ledger_name,tally_group,opening_dr,opening_cr
+Corvel Bank Current Account,Bank Accounts,100000000,0
+Equity Share Capital,Capital Account,0,2000000000
+Sales - Components,Sales Accounts,0,0
+Repairs & Maintenance,Indirect Expenses,0,0
+Raw Material Purchases,Purchase Accounts,0,0
+Subcontract Processing Charges,Direct Expenses,0,0
+Inventory Change,Direct Expenses,0,0
+Rajesh Mehta,Sundry Creditors,0,0
+Anita Mehta,Unsecured Loans,0,0
+Mehta Family Trust,Sundry Creditors,0,0
+Sharma Traders,Sundry Creditors,0,0
+Kaveri Steel Traders,Sundry Creditors,0,0
+Lotus Paints,Sundry Creditors,0,0
+Bharat Fasteners,Sundry Creditors,0,0
+Delta Rubber,Sundry Creditors,0,0
+Kumar Packaging,Sundry Creditors,0,0
+Sai Precision Springs,Sundry Creditors,0,0
+Vega Castings,Sundry Creditors,0,0
+Meridian Co-operative Bank Term Loan,Secured Loans,0,0
+Unity Commercial Bank Cash Credit,Bank OD A/c,0,0
+Land,Fixed Assets,5000000000,0
+Factory Building,Fixed Assets,10000000000,0
+Plant & Machinery,Fixed Assets,25000000000,0
+Vehicles,Fixed Assets,3000000000,0
+Office Equipment,Fixed Assets,1000000000,0
+Furniture,Fixed Assets,1000000000,0
+Accumulated Depreciation,Fixed Assets,0,27000000000
+Capital Work in Progress,Fixed Assets,0,0
+Software,Fixed Assets,0,0
+Raw Material Inventory,Stock-in-Hand,4500000000,0
+Work in Progress Inventory,Stock-in-Hand,1000000000,0
+Finished Goods Inventory,Stock-in-Hand,2000000000,0
+Stores Inventory,Stock-in-Hand,500000000,0
+Corvel Bank Fixed Deposit,Deposits (Asset),0,0
+Cash in Hand,Cash-in-Hand,100000000,0
+Employee Advances,Loans & Advances (Asset),0,0
+Supplier Advances,Loans & Advances (Asset),0,0
+Security Deposits,Deposits (Asset),0,0
+Prepaid Insurance,Current Assets,0,0
+Input GST,Duties & Taxes,0,0
+Output GST,Duties & Taxes,0,0
+TDS Payable,Duties & Taxes,0,0
+Salary Payable,Current Liabilities,0,0
+Audit Fee Payable,Current Liabilities,0,0
+Leave Provision,Provisions,0,0
+Retained Earnings,Reserves & Surplus,0,4200000000
+Wages,Direct Expenses,0,0
+Electricity,Direct Expenses,0,0
+Freight Inward,Direct Expenses,0,0
+Salaries,Indirect Expenses,0,0
+Rent,Indirect Expenses,0,0
+Insurance Expense,Indirect Expenses,0,0
+Professional Fees,Indirect Expenses,0,0
+Bank Charges,Indirect Expenses,0,0
+Depreciation,Indirect Expenses,0,0
+Loan Interest,Indirect Expenses,0,0
+Office Supplies,Indirect Expenses,0,0
+Travel Expense,Indirect Expenses,0,0
+Other Income,Indirect Incomes,0,0
+Zenvar Motors Ltd,Sundry Debtors,1400000000,0
+Fenmora Components Ltd,Sundry Debtors,400000000,0
+Belvora Automotive Ltd,Sundry Debtors,400000000,0
+Cenvira Assemblies Ltd,Sundry Debtors,400000000,0
+Dalmora Mobility Ltd,Sundry Debtors,400000000,0
+Elvanta Parts Ltd,Sundry Debtors,400000000,0
+Fervani Systems Ltd,Sundry Debtors,400000000,0
+Galmira Vehicles Ltd,Sundry Debtors,400000000,0
+Henvora Components Ltd,Sundry Debtors,400000000,0
+Irvana Assemblies Ltd,Sundry Debtors,400000000,0
+Talvori Equipment Works,Sundry Creditors,0,750000000
+Elvani Civil Works,Sundry Creditors,0,750000000
+Avrenda Metals,Sundry Creditors,0,750000000
+Belnori Alloys,Sundry Creditors,0,750000000
+Cervana Castings,Sundry Creditors,0,750000000
+Denvori Forgings,Sundry Creditors,0,750000000
+Elnara Bearings,Sundry Creditors,0,750000000
+Farsena Tubes,Sundry Creditors,0,750000000
+Gervani Plates,Sundry Creditors,0,750000000
+Helvora Rods,Sundry Creditors,0,750000000
+Ilnori Springs,Sundry Creditors,0,750000000
+Jervana Seals,Sundry Creditors,0,750000000
+Kelvori Fasteners,Sundry Creditors,0,750000000
+Lenvira Rubber,Sundry Creditors,0,750000000
+Mervani Packaging,Sundry Creditors,0,750000000
+Nolvara Steels,Sundry Creditors,0,750000000
+Orvani Wires,Sundry Creditors,0,750000000
+Pelnora Coatings,Sundry Creditors,0,750000000
+Quervani Plastics,Sundry Creditors,0,750000000
+Renvora Tools,Sundry Creditors,0,750000000
+Avenor Utilities,Sundry Creditors,0,0
+Tervana Logistics,Sundry Creditors,0,0
+Neravo Facility Services,Sundry Creditors,0,0
+Velora Advisory Services,Sundry Creditors,0,0
+Unity Commercial Bank WCDL,Bank OD A/c,0,10000000000

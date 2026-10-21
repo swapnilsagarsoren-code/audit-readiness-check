@@ -1,0 +1,11 @@
+.env*
+node_modules/
+dist/
+artifacts/
+test-results/
+playwright-report/
+private/
+.npm-cache/
+.DS_Store
+*.tsbuildinfo
+.claude/settings.local.json

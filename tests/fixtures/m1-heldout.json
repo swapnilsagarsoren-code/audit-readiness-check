@@ -1,0 +1,330 @@
+[
+  {
+    "flagKey": "H33",
+    "ruleId": "R1",
+    "ledgerName": "Sunita Rao",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-06-12T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "recd NEFT adv tooling jobwork",
+        "amountPaise": 400000000,
+        "voucherNo": "HX-50101",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-07-03T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "recd adv for tooling jobwork 2nd",
+        "amountPaise": 250000000,
+        "voucherNo": "HX-50102",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-08-21T00:00:00+05:30",
+        "party": "Sunita Rao",
+        "narration": "bal funds recd NEFT",
+        "amountPaise": 150000000,
+        "voucherNo": "HX-50103",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H34",
+    "ruleId": "R1",
+    "ledgerName": "Interim Funding A/c",
+    "tallyGroup": "Unsecured Loans",
+    "entries": [
+      {
+        "date": "2025-05-06T00:00:00+05:30",
+        "party": "Tarun Bhalla",
+        "narration": "recd NEFT TB for wc",
+        "amountPaise": 180000000,
+        "voucherNo": "HX-50201",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-05-06T00:00:00+05:30",
+        "party": "Nandini Bhalla",
+        "narration": "gift from family, recd NEFT",
+        "amountPaise": 120000000,
+        "voucherNo": "HX-50202",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-08-18T00:00:00+05:30",
+        "party": "Bhalla Ventures LLP",
+        "narration": "recd 10L wc support",
+        "amountPaise": 100000000,
+        "voucherNo": "HX-50203",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-30T00:00:00+05:30",
+        "party": "Tarun Bhalla",
+        "narration": "int @12% H1 paid to TB",
+        "amountPaise": 10800000,
+        "voucherNo": "HX-50204",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H35",
+    "ruleId": "R1",
+    "ledgerName": "Northfield Holdings Pvt Ltd",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-04-09T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "RTGS recd",
+        "amountPaise": 50000000,
+        "voucherNo": "HX-50301",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-04-28T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "RTGS recd NHPL",
+        "amountPaise": 50000000,
+        "voucherNo": "HX-50302",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-05-19T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "recd adv scrap offtake",
+        "amountPaise": 100000000,
+        "voucherNo": "HX-50303",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-06-10T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "RTGS recd",
+        "amountPaise": 50000000,
+        "voucherNo": "HX-50304",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-07-02T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "recd NEFT from NHPL",
+        "amountPaise": 75000000,
+        "voucherNo": "HX-50305",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-07-24T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "RTGS recd",
+        "amountPaise": 50000000,
+        "voucherNo": "HX-50306",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-08-14T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "recd - adv scrap offtake",
+        "amountPaise": 100000000,
+        "voucherNo": "HX-50307",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-08T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "RTGS recd",
+        "amountPaise": 50000000,
+        "voucherNo": "HX-50308",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-10-06T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "NEFT recd NHPL sep end",
+        "amountPaise": 50000000,
+        "voucherNo": "HX-50309",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-11-12T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "recd - refund excess paid??",
+        "amountPaise": 100000000,
+        "voucherNo": "HX-50310",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-12-03T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "RTGS recd",
+        "amountPaise": 50000000,
+        "voucherNo": "HX-50311",
+        "lineNo": 2
+      },
+      {
+        "date": "2026-01-20T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "recd NEFT",
+        "amountPaise": 75000000,
+        "voucherNo": "HX-50312",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-02-25T00:00:00+05:30",
+        "party": "Northfield Holdings Pvt Ltd",
+        "narration": "RTGS recd feb",
+        "amountPaise": 50000000,
+        "voucherNo": "HX-50313",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H36",
+    "ruleId": "R2",
+    "ledgerName": "Pinnacle Gasket Works",
+    "tallyGroup": "Sundry Creditors",
+    "entries": [
+      {
+        "date": "2025-07-04T00:00:00+05:30",
+        "party": "Pinnacle Gasket Works",
+        "narration": "Inv GW/118 dt 04.07.25 gaskets",
+        "amountPaise": 142000000,
+        "voucherNo": "HX-50401",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-29T00:00:00+05:30",
+        "party": "Pinnacle Gasket Works",
+        "narration": "paid NEFT as per terms vs GW/118",
+        "amountPaise": 142000000,
+        "voucherNo": "HX-50402",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H37",
+    "ruleId": "R3",
+    "ledgerName": "Riverbend Co-operative Finance Term Loan - Press Line",
+    "tallyGroup": "Secured Loans",
+    "entries": [
+      {
+        "date": "2025-05-14T00:00:00+05:30",
+        "party": "Riverbend Co-operative Finance Ltd",
+        "narration": "TL tranche 1 disbd press line 400T, moratorium till Jun-26",
+        "amountPaise": 40000000000,
+        "voucherNo": "HX-50501",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-08-26T00:00:00+05:30",
+        "party": "Riverbend Co-operative Finance Ltd",
+        "narration": "TL tranche 2 disbd",
+        "amountPaise": 20000000000,
+        "voucherNo": "HX-50502",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H38",
+    "ruleId": "R4",
+    "ledgerName": "Repairs - Plant & Machinery",
+    "tallyGroup": "Indirect Expenses",
+    "entries": [
+      {
+        "date": "2025-11-18T00:00:00+05:30",
+        "party": "Tessera Industrial Services",
+        "narration": "replcmt main hyd cylinder & new PLC panel Press 4",
+        "amountPaise": 315000000,
+        "voucherNo": "HX-50601",
+        "lineNo": 1
+      }
+    ]
+  },
+  {
+    "flagKey": "H39",
+    "ruleId": "R4",
+    "ledgerName": "Repairs & Maintenance - Buildings",
+    "tallyGroup": "Indirect Expenses",
+    "entries": [
+      {
+        "date": "2025-07-15T00:00:00+05:30",
+        "party": "Greenfield Civil Works",
+        "narration": "stores shed extension RA bill 1",
+        "amountPaise": 280000000,
+        "voucherNo": "HX-50701",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-02T00:00:00+05:30",
+        "party": "Hartwell Electricals",
+        "narration": "new HT cabling & panel for ext shed",
+        "amountPaise": 240000000,
+        "voucherNo": "HX-50702",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-10-28T00:00:00+05:30",
+        "party": "Greenfield Civil Works",
+        "narration": "RA bill 2 shed ext",
+        "amountPaise": 340000000,
+        "voucherNo": "HX-50703",
+        "lineNo": 1
+      },
+      {
+        "date": "2026-01-14T00:00:00+05:30",
+        "party": "Greenfield Civil Works",
+        "narration": "RA bill 3 - civil works",
+        "amountPaise": 260000000,
+        "voucherNo": "HX-50704",
+        "lineNo": 2
+      }
+    ]
+  },
+  {
+    "flagKey": "H40",
+    "ruleId": "R5",
+    "ledgerName": "Sales - Aftermarket Spares",
+    "tallyGroup": "Sales Accounts",
+    "entries": [
+      {
+        "date": "2025-06-17T00:00:00+05:30",
+        "party": "Ravi Metals Recyclers",
+        "narration": "sale of CI borings scrap",
+        "amountPaise": 114000000,
+        "voucherNo": "HX-50801",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-08-22T00:00:00+05:30",
+        "party": "Orchid Assurance Co Ltd",
+        "narration": "claim settled transformer dmg",
+        "amountPaise": 140000000,
+        "voucherNo": "HX-50802",
+        "lineNo": 1
+      },
+      {
+        "date": "2025-09-30T00:00:00+05:30",
+        "party": "Pallavi Logistics",
+        "narration": "godown rent Q2 recd",
+        "amountPaise": 36000000,
+        "voucherNo": "HX-50803",
+        "lineNo": 2
+      },
+      {
+        "date": "2025-11-04T00:00:00+05:30",
+        "party": "Ravi Metals Recyclers",
+        "narration": "scrap sale - turnings",
+        "amountPaise": 72000000,
+        "voucherNo": "HX-50804",
+        "lineNo": 1
+      }
+    ]
+  }
+]
