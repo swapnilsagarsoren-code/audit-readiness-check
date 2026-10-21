@@ -24,6 +24,15 @@
 
 - Auditor review done in chat (20 Oct): 28 AI questions rated (15 Good, 9 Leading, 2 Wrong question, 2 with comments), 12 edge cases ruled, evidence bundles settled; full record in artifacts/m1/auditor-answers.md, summarised as decision #33 (in artifacts/m1/log-decisions.py, to be run by Swapnil). Consequences for M2: R2 and R3 questions become document questions (largely fixed wording); R1 gets a neutral open question with the options on answer buttons; evidence is a code-listed bundle, not an AI choice. Revised M2 plan awaiting Swapnil's approval.
 
+## M3 released (21 Oct 2026)
+
+- **Public demo:** https://famous-cuttlefish-816.convex.site (Convex production `famous-cuttlefish-816`, project audit-readiness). Dev stays `your-dev-deployment`. `doting-zebra-426` is the deal tracker, not this app.
+- **Last stable state = commit 8994695 + artifacts/m3/prod-backup-post-release.zip** (taken 21 Oct 2026, 6:20 pm IST, after Swapnil's play-through). Earlier backups: prod-backup-pre-data.zip (empty prod), prod-backup-pre-v2.zip (before the second deploy).
+- **Gate 2:** `npm run check:live https://famous-cuttlefish-816.convex.site` 8 of 8 PASS; 390 and 1440 px, no console errors, outside links 200 (checked on the first release). Production has no environment variables: no EDIT_PASSCODE, no AI keys, no SEED_ALLOWED.
+- **Books on prod:** imported from the dev export as artifacts/m3/books-only.zip (8 book tables, 2,765 rows, fresh IDs; no dev answers, sessions or site files).
+- **Not yet exercised on prod:** the RBI button (proven on dev from Convex's servers on 21 Oct).
+- **Release:** `CONVEX_DEPLOYMENT=prod:famous-cuttlefish-816 npm run deploy < /dev/null`, run by Swapnil. Rollback: redeploy the last stable commit; restore data only if rows are wrong with `npx convex import --replace --yes --deployment famous-cuttlefish-816 <backup zip>`.
+
 ## M2 demo: Gate A and Gate B (20 Oct 2026)
 
 - Gate A (a873a28, c591610): R1 to R3 flag signals, materiality ranking (overall Rs 45 lakh, flag line Rs 22.5 lakh), gaps list screen. Independent review: PASS.

@@ -6,9 +6,3 @@ export function visibleMsmeFollowups<T extends Followup>(all: T[], sel: MsmeSele
 }
 export const msmeDirty = (selection: MsmeSelection, saved: MsmeSelection) =>
   (['certificate', 'size', 'terms'] as const).some(k => (selection[k] ?? undefined) !== (saved[k] ?? undefined));
-// Money in the table: whole paise to rupees with two decimals, Indian grouping.
-export function rupeesAndPaise(paise: number): string {
-  const rupees = Math.floor(paise / 100).toString(), p = (paise % 100).toString().padStart(2, '0');
-  const lead = rupees.slice(0, -3).replace(/\B(?=(?:\d{2})+$)/g, ',');
-  return `₹${lead ? `${lead},` : ''}${rupees.slice(-3)}.${p}`;
-}

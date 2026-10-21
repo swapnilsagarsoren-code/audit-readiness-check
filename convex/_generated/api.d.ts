@@ -11,15 +11,22 @@
 import type * as ai from "../ai.js";
 import type * as answers from "../answers.js";
 import type * as books from "../books.js";
+import type * as crons from "../crons.js";
 import type * as decisions from "../decisions.js";
 import type * as flags from "../flags.js";
 import type * as functions from "../functions.js";
 import type * as guard from "../guard.js";
 import type * as msme from "../msme.js";
 import type * as rates from "../rates.js";
+import type * as rbi from "../rbi.js";
+import type * as rbiCore from "../rbiCore.js";
 import type * as seed from "../seed.js";
+import type * as story from "../story.js";
+import type * as storyCore from "../storyCore.js";
 import type * as summary from "../summary.js";
 import type * as termloan from "../termloan.js";
+import type * as visitor from "../visitor.js";
+import type * as visitorCore from "../visitorCore.js";
 
 import type {
   ApiFromModules,
@@ -31,15 +38,22 @@ declare const fullApi: ApiFromModules<{
   ai: typeof ai;
   answers: typeof answers;
   books: typeof books;
+  crons: typeof crons;
   decisions: typeof decisions;
   flags: typeof flags;
   functions: typeof functions;
   guard: typeof guard;
   msme: typeof msme;
   rates: typeof rates;
+  rbi: typeof rbi;
+  rbiCore: typeof rbiCore;
   seed: typeof seed;
+  story: typeof story;
+  storyCore: typeof storyCore;
   summary: typeof summary;
   termloan: typeof termloan;
+  visitor: typeof visitor;
+  visitorCore: typeof visitorCore;
 }>;
 
 /**
@@ -68,4 +82,6 @@ export declare const internal: FilterApi<
   FunctionReference<any, "internal">
 >;
 
-export declare const components: {};
+export declare const components: {
+  staticHosting: import("@convex-dev/static-hosting/_generated/component.js").ComponentApi<"staticHosting">;
+};

@@ -8,10 +8,10 @@ export type GapFlag = {
 export type GapsData = { materiality: { overall: number; flagLine: number; hideBelow: number; basis: 'revenue' | 'pbt' }; flags: GapFlag[] };
 export type GapsState = { status: 'loading' | 'error' | 'empty' } | { status: 'ready'; data: GapsData };
 
-export function formatCroreLakh(paise: number): string {
+export function formatCroreLakh(paise: number, crore = 'cr'): string {
   const rupees = paise / 100;
   const trim = (n: number) => parseFloat(n.toFixed(2)).toString();
-  if (rupees >= 1_00_00_000) return `₹${trim(rupees / 1_00_00_000)} cr`;
+  if (rupees >= 1_00_00_000) return `₹${trim(rupees / 1_00_00_000)} ${crore}`;
   if (rupees >= 1_00_000) return `₹${trim(rupees / 1_00_000)} lakh`;
   return formatIndianRupees(paise);
 }

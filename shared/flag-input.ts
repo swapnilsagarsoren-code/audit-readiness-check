@@ -53,6 +53,13 @@ export function formatIndianRupees(amountPaise: number): string {
   return `₹${grouped}${paise ? `.${paise.toString().padStart(2, '0')}` : ''}`;
 }
 
+// Money in the table: whole paise to rupees with two decimals, Indian grouping.
+export function rupeesAndPaise(paise: number): string {
+  const rupees = Math.floor(paise / 100).toString(), p = (paise % 100).toString().padStart(2, '0');
+  const lead = rupees.slice(0, -3).replace(/\B(?=(?:\d{2})+$)/g, ',');
+  return `₹${lead ? `${lead},` : ''}${rupees.slice(-3)}.${p}`;
+}
+
 const compareText = (a: string, b: string) => a < b ? -1 : a > b ? 1 : 0;
 
 export function orderFlagEntries(flag: RawFlag): RawFlagEntry[] {

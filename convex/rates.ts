@@ -2,6 +2,7 @@ import { v } from 'convex/values';
 import { query, internalMutation } from './functions';
 import { assertSeedAllowed } from '../shared/seed-plan';
 import { istDate } from '../shared/rbi-rate';
+import { latestRate } from './rbiCore';
 
 // The Bank Rate is fetched from rbi.org.in by scripts/fetch-rbi-rate.mts, stored with its date and source, and never typed in.
 export const save = internalMutation({ args: { value: v.number(), date: v.string(), sourceUrl: v.string() }, handler: async (ctx, { value, date, sourceUrl }) => {
@@ -13,8 +14,4 @@ export const save = internalMutation({ args: { value: v.number(), date: v.string
   return { stored: value };
 } });
 
-export const current = query({ args: {}, handler: async (ctx) => {
-  const rows = (await ctx.db.query('rbiBankRate').collect()).filter(r => r.value !== null && r.date !== null);
-  rows.sort((a, b) => (a.date! < b.date! ? 1 : a.date! > b.date! ? -1 : 0));
-  return rows[0] ? { value: rows[0].value as number, date: rows[0].date as string, sourceUrl: rows[0].sourceUrl as string } : null;
-} });
+export const current = query({ args: {}, handler: (ctx) => latestRate(ctx) });

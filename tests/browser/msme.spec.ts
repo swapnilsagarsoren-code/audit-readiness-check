@@ -53,6 +53,7 @@ for(const width of [390,1440]) {
     await layout();
     await page.getByRole('button',{name:'Approve',exact:true}).click();
     await expect(page.locator('.decision')).toHaveText('Approved');
+    await expect(page.locator('.story-go')).toHaveCount(0);
     await layout();
   });
 }

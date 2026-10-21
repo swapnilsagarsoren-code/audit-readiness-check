@@ -1,6 +1,6 @@
 type Row = Record<string, unknown> & { _id: string };
 
-// A small in-memory stand-in for ctx.db: tables, withIndex(eq/gte/lt), collect, unique, insert, replace, delete.
+// A small in-memory stand-in for ctx.db: tables, withIndex(eq/gte/lt), order, collect, take, first, unique, insert, replace, delete.
 export function fakeDb(seed: Record<string, Record<string, unknown>[]> = {}) {
   const tables = new Map<string, Row[]>(Object.entries(seed).map(([name, rows]) => [name, rows.map((r, i) => ({ _id: `${name}:${i}`, ...r }))]));
   let next = 1000;
@@ -8,21 +8,27 @@ export function fakeDb(seed: Record<string, Record<string, unknown>[]> = {}) {
   const db = {
     query(table: string) {
       const filters: ((r: Row) => boolean)[] = [];
+      let desc = false;
+      // Insertion order stands in for index order; order('desc') reverses it.
+      const found = () => { const f = rows(table).filter(r => filters.every(g => g(r))); return desc ? f.reverse() : f; };
       const api = {
-        withIndex(_name: string, build: (q: unknown) => unknown) {
+        withIndex(_name: string, build?: (q: unknown) => unknown) {
           const q = {
             eq: (f: string, v: unknown) => { filters.push(r => r[f] === v); return q; },
             gte: (f: string, v: number) => { filters.push(r => (r[f] as number) >= v); return q; },
             lt: (f: string, v: number) => { filters.push(r => (r[f] as number) < v); return q; },
           };
-          build(q);
+          build?.(q);
           return api;
         },
-        collect: async () => rows(table).filter(r => filters.every(f => f(r))).map(r => ({ ...r })),
+        order(dir: 'asc' | 'desc') { desc = dir === 'desc'; return api; },
+        collect: async () => found().map(r => ({ ...r })),
+        take: async (n: number) => found().slice(0, n).map(r => ({ ...r })),
+        first: async () => { const r = found()[0]; return r ? { ...r } : null; },
         unique: async () => {
-          const found = rows(table).filter(r => filters.every(f => f(r)));
-          if (found.length > 1) throw new Error('unique() matched more than one row');
-          return found[0] ? { ...found[0] } : null;
+          const hits = found();
+          if (hits.length > 1) throw new Error('unique() matched more than one row');
+          return hits[0] ? { ...hits[0] } : null;
         },
       };
       return api;

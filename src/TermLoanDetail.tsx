@@ -19,15 +19,16 @@ export type TermLoanState = { status: 'loading' | 'error' | 'missing' } | { stat
 type Props = {
   state: TermLoanState; selection: TermLoanSelection; passcode: string; busy: boolean; message: string;
   onRetry?: () => void; onSelect: (value: string) => void; onPasscode: (value: string) => void; onSave: () => void; onDecide: (decision: 'approved' | 'sent_back') => void;
+  back?: { href: string; text: string }; codeLabel?: string;
 };
 const verdict = (v: 'within' | 'breach', min: number) => `${v === 'within' ? 'Within' : 'Below'} the ${min.toFixed(2)} floor`;
 
-export function TermLoanDetailPage({ state, selection, passcode, busy, message, onRetry, onSelect, onPasscode, onSave, onDecide }: Props) {
+export function TermLoanDetailPage({ state, selection, passcode, busy, message, onRetry, onSelect, onPasscode, onSave, onDecide, back, codeLabel }: Props) {
   const data = state.status === 'ready' ? state.data : null;
   const dirty = !!data && (selection.documents ?? undefined) !== (((data.answer ?? {}) as TermLoanSelection).documents ?? undefined);
   const snap = data?.snapshot ?? null;
   return <section className="detail" aria-label="Gap detail" aria-busy={state.status === 'loading'}>
-    <a className="back" href="#/">← All gaps</a>
+    <a className="back" href={back?.href ?? '#/'}>{back?.text ?? '← All gaps'}</a>
     {state.status === 'loading' && <div className="skeleton" aria-hidden="true" />}
     {state.status === 'error' && <><p role="alert">Couldn't load this gap. Nothing here is final.</p>{onRetry && <button type="button" onClick={onRetry}>Try again</button>}</>}
     {state.status === 'missing' && <p>Nothing to review here.</p>}
@@ -48,7 +49,7 @@ export function TermLoanDetailPage({ state, selection, passcode, busy, message, 
       <ul className="docs">{data.evidence.map(d => <li key={d.id}>{d.label}</li>)}</ul>
 
       <div className="passcode">
-        <label htmlFor="edit-passcode">Edit passcode</label>
+        <label htmlFor="edit-passcode">{codeLabel ?? 'Edit passcode'}</label>
         <input id="edit-passcode" type="password" autoComplete="off" value={passcode} onChange={ev => onPasscode(ev.target.value)} />
         <p className="note">Needed to save an answer or a decision.</p>
         <button type="button" onClick={onSave} disabled={busy || !selection.documents || passcode === ''}>Save answer</button>

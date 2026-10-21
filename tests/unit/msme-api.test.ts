@@ -6,6 +6,7 @@ import type { RuleData } from '../../shared/rules.ts';
 import { r2Snapshot, r2ApprovalBlock } from '../../shared/r2-outcome.ts';
 
 const text = await readFile('convex/msme.ts', 'utf8');
+const rbiCore = await readFile('convex/rbiCore.ts', 'utf8');
 const schema = await readFile('convex/schema.ts', 'utf8');
 const data = (await loadSeedData('.')) as unknown as RuleData;
 const rate = { value: 5.75, date: '2026-10-20', sourceUrl: 'https://www.rbi.org.in/' };
@@ -33,7 +34,8 @@ test('R2 only, nothing written to the books, no AI, no secret; the rate comes fr
   assert.match(text, /flag\.ruleId === 'R2'/);
   assert.doesNotMatch(text, /ctx\.db\.(insert|replace|delete|patch)\(/);
   assert.doesNotMatch(text, /ANTHROPIC|fetch\(|apiKey|EDIT_PASSCODE/);
-  assert.match(text, /query\('rbiBankRate'\)/);
+  assert.match(text, /latestRate\(ctx\)/);
+  assert.match(rbiCore, /query\('rbiBankRate'\)/);
 });
 
 test('schema: the two R2 tables are added and carry no passcode', () => {

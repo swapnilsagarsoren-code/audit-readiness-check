@@ -2,13 +2,13 @@ import { v } from 'convex/values';
 import { query, mutation } from './functions';
 import { termLoanAnswerFields } from './schema';
 import { loadBooks } from './books';
-import { recordAnswer, decideOn } from './decisions';
+import { recordAnswer, decideOn, rowFor } from './decisions';
 import { evidenceBundle } from '../shared/evidence-bundle';
 import { fixedR3Context, r3Snapshot, r3ApprovalBlock, R3_QUESTION, type R3Answer } from '../shared/r3-outcome';
 
 // R3 (term loan, no current-maturity split): question written by code, split computed by code, outcome fixed.
 // Reads are public; every write checks the edit passcode first and writes nothing to the books.
-const { flagKey: _k, answeredAt: _a, ...answerArgs } = termLoanAnswerFields;
+const { sessionId: _s, flagKey: _k, answeredAt: _a, ...answerArgs } = termLoanAnswerFields;
 
 async function loadFlag(ctx: { db: any }, flagKey: string) {
   const flag = await ctx.db.query('flag').withIndex('by_key', (q: any) => q.eq('flagKey', flagKey)).unique();
@@ -16,12 +16,12 @@ async function loadFlag(ctx: { db: any }, flagKey: string) {
 }
 const toAnswer = (a: { documents?: R3Answer['documents'] }): R3Answer => ({ documents: a.documents });
 
-export const detail = query({ args: { flagKey: v.string() }, handler: async (ctx, { flagKey }) => {
+export const detail = query({ args: { sessionId: v.optional(v.string()), flagKey: v.string() }, handler: async (ctx, { sessionId, flagKey }) => {
   const flag = await loadFlag(ctx, flagKey);
   if (!flag) return null;
   const { data, covenants } = await loadBooks(ctx);
-  const answer = await ctx.db.query('termLoanAnswer').withIndex('by_flag', (q) => q.eq('flagKey', flagKey)).unique();
-  const outcome = await ctx.db.query('termLoanOutcome').withIndex('by_flag', (q) => q.eq('flagKey', flagKey)).unique();
+  const answer = await rowFor(ctx, 'termLoanAnswer', sessionId, flagKey);
+  const outcome = await rowFor(ctx, 'termLoanOutcome', sessionId, flagKey);
   const { _id, _creationTime, ...a } = answer ?? ({} as Record<string, unknown>);
   return {
     flag: { flagKey, party: flag.party, ledger: flag.ledger, amount: flag.amount, band: flag.band },
@@ -32,12 +32,12 @@ export const detail = query({ args: { flagKey: v.string() }, handler: async (ctx
   };
 } });
 
-export const record = mutation({ args: { flagKey: v.string(), passcode: v.string(), ...answerArgs }, handler: (ctx, { flagKey, passcode, ...fields }) =>
-  recordAnswer(ctx, { answerTable: 'termLoanAnswer', outcomeTable: 'termLoanOutcome', flagKey, passcode, fields, loadFlag: (key) => loadFlag(ctx, key) }) });
+export const record = mutation({ args: { sessionId: v.optional(v.string()), flagKey: v.string(), passcode: v.string(), ...answerArgs }, handler: (ctx, { sessionId, flagKey, passcode, ...fields }) =>
+  recordAnswer(ctx, { answerTable: 'termLoanAnswer', outcomeTable: 'termLoanOutcome', sessionId, flagKey, passcode, fields, loadFlag: (key) => loadFlag(ctx, key) }) });
 
-export const decide = mutation({ args: { flagKey: v.string(), passcode: v.string(), answeredAt: v.number(), decision: v.union(v.literal('approved'), v.literal('sent_back')) }, handler: (ctx, { flagKey, passcode, answeredAt, decision }) =>
+export const decide = mutation({ args: { flagKey: v.string(), passcode: v.string(), answeredAt: v.number(), decision: v.union(v.literal('approved'), v.literal('sent_back')), sessionId: v.optional(v.string()) }, handler: (ctx, { sessionId, flagKey, passcode, answeredAt, decision }) =>
   decideOn(ctx, {
-    answerTable: 'termLoanAnswer', outcomeTable: 'termLoanOutcome', flagKey, passcode, answeredAt, decision, loadFlag: (key) => loadFlag(ctx, key),
+    answerTable: 'termLoanAnswer', outcomeTable: 'termLoanOutcome', sessionId, flagKey, passcode, answeredAt, decision, loadFlag: (key) => loadFlag(ctx, key),
     snapshotFor: async (flag, answer) => { const { data, covenants } = await loadBooks(ctx); return r3Snapshot(toAnswer(answer), data, flag.ledger, covenants.currentRatio); },
     approvalBlock: r3ApprovalBlock,
   }) });

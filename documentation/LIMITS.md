@@ -29,6 +29,12 @@ This page lists what the demo does not do and where it can be wrong. It is a ref
 - **The decision snapshot is recomputed when you decide.** The save checks that the answer is unchanged, but it does not check that the books are unchanged.
 - **The retired held-out sets and the answer key are public in this repository,** so the AI step can no longer be evaluated blind. A new evaluation needs a fresh held-out set.
 
+## Public story demo limits
+
+- **The caps are shared by everyone.** Convex functions cannot see a visitor's IP address, so the limits on new sessions (500 a day), saves (5,000 a day, wrong codes included) and RBI reads (50 a day) are global. One script can use up a day's allowance, and real visitors then see "The demo has reached today's limit. Try again tomorrow." until midnight India time. Nobody's saved work is lost.
+- **The RBI schedule is one year's press release.** The button reads RBI's 2026-27 meeting schedule. After the last 2026-27 meeting it says "No further meeting in RBI's 2026-27 schedule" until the address is updated to the 2027-28 release.
+- **Keep EDIT_PASSCODE unset on production.** The public build still answers the dev gap screens (`#/gap/...`), and saves without a session use EDIT_PASSCODE. Unset, every such save is refused. If it were set, anyone could try ten passcodes an hour and lock the dev path.
+
 ## Unverified legal and standards points
 
 No official-text folder is bundled with this repository. These points came from agent research and need checking against the official text before anyone relies on them.

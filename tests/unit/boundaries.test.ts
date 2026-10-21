@@ -15,7 +15,7 @@ test('client wording excludes banned expressions',async()=>{
 });
 test('schema contains only the M0 tables plus the additive M1 and Gate A tables and CLI AI files are disabled',async()=>{
   const text=await readFile('convex/schema.ts','utf8');
-  assert.deepEqual([...text.matchAll(/^  (\w+):defineTable/gm)].map(m=>m[1]).sort(),['aiUsage','answer','company','editAttempt','entry','flag','flagRun','ledger','msmeAnswer','msmeOutcome','outcome','period','question','rbiBankRate','rule','supplier','termLoanAnswer','termLoanOutcome']);
+  assert.deepEqual([...text.matchAll(/^  (\w+):defineTable/gm)].map(m=>m[1]).sort(),['aiUsage','answer','company','editAttempt','entry','flag','flagRun','ledger','msmeAnswer','msmeOutcome','outcome','period','question','rbiBankRate','rbiCheck','rule','supplier','termLoanAnswer','termLoanOutcome','usageCounter','visitorAttempt','visitorSession']);
   assert.equal(JSON.parse(await readFile('convex.json','utf8')).aiFiles.enabled,false);
 });
 test('seed mutation is internal and its handler starts with the deployment guard',async()=>{

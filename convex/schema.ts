@@ -30,7 +30,7 @@ export const flagRunFields={ruleVersion:v.string(),computedAt:v.number(),overall
 const ratio=v.object({debt:v.number(),equity:v.number(),ratio:v.number()});
 const verdict=v.union(v.literal('within'),v.literal('breach'));
 export const answerFields={
-  flagKey:v.string(),
+  sessionId:v.optional(v.string()),flagKey:v.string(),
   nature:v.union(v.literal('goods_services'),v.literal('loan'),v.literal('advance'),v.literal('deposit'),v.literal('not_sure')),
   counterparty:v.optional(v.union(v.literal('director'),v.literal('relative'),v.literal('shareholder'),v.literal('group_company'),v.literal('other'),v.literal('not_sure'))),
   term:v.optional(v.union(v.literal('within_12_months'),v.literal('after_12_months'),v.literal('on_demand'))),
@@ -38,7 +38,7 @@ export const answerFields={
   answeredAt:v.number(),
 };
 export const outcomeFields={
-  flagKey:v.string(),decision:v.union(v.literal('approved'),v.literal('sent_back')),decidedAt:v.number(),
+  sessionId:v.optional(v.string()),flagKey:v.string(),decision:v.union(v.literal('approved'),v.literal('sent_back')),decidedAt:v.number(),
   snapshot:v.object({
     outcome:v.object({kind:v.union(v.literal('no_change'),v.literal('reclass'),v.literal('escalate'),v.literal('ask_more')),caption:v.optional(v.string()),
       entry:v.optional(v.object({debit:v.string(),credit:v.string(),amount:v.number()})),missing:v.optional(v.array(v.string())),
@@ -47,14 +47,14 @@ export const outcomeFields={
   }),
 };
 export const msmeAnswerFields={
-  flagKey:v.string(),
+  sessionId:v.optional(v.string()),flagKey:v.string(),
   certificate:v.optional(v.union(v.literal('yes'),v.literal('no'),v.literal('not_registered'),v.literal('not_sure'))),
   size:v.optional(v.union(v.literal('micro'),v.literal('small'),v.literal('medium'),v.literal('not_registered'),v.literal('not_sure'))),
   terms:v.optional(v.union(v.literal('none'),v.literal('up_to_15'),v.literal('up_to_30'),v.literal('up_to_45'),v.literal('over_45'))),
   answeredAt:v.number(),
 };
 export const msmeOutcomeFields={
-  flagKey:v.string(),decision:v.union(v.literal('approved'),v.literal('sent_back')),decidedAt:v.number(),
+  sessionId:v.optional(v.string()),flagKey:v.string(),decision:v.union(v.literal('approved'),v.literal('sent_back')),decidedAt:v.number(),
   snapshot:v.object({
     kind:v.union(v.literal('interest_due'),v.literal('not_late'),v.literal('no_interest'),v.literal('escalate'),v.literal('ask_more')),
     allowed:v.optional(v.number()),principal:v.optional(v.number()),interest:v.optional(v.union(v.number(),v.null())),
@@ -64,14 +64,14 @@ export const msmeOutcomeFields={
   }),
 };
 export const termLoanAnswerFields={
-  flagKey:v.string(),
+  sessionId:v.optional(v.string()),flagKey:v.string(),
   documents:v.optional(v.union(v.literal('both'),v.literal('sanction_only'),v.literal('schedule_only'),v.literal('neither'),v.literal('not_sure'))),
   answeredAt:v.number(),
 };
 const currentRatioShape=v.object({assets:v.number(),liabilities:v.number(),ratio:v.number()});
 const floorVerdict=v.union(v.literal('within'),v.literal('breach'));
 export const termLoanOutcomeFields={
-  flagKey:v.string(),decision:v.union(v.literal('approved'),v.literal('sent_back')),decidedAt:v.number(),
+  sessionId:v.optional(v.string()),flagKey:v.string(),decision:v.union(v.literal('approved'),v.literal('sent_back')),decidedAt:v.number(),
   snapshot:v.object({
     kind:v.union(v.literal('split'),v.literal('estimate'),v.literal('cannot_compute'),v.literal('ask_more')),
     split:v.union(v.object({balance:v.number(),totalInstalments:v.number(),paid:v.number(),remaining:v.number(),instalment:v.number(),due12:v.number()}),v.null()),
@@ -91,15 +91,19 @@ export default defineSchema({
   question:defineTable(questionFields).index('by_run',['runId']),
   flag:defineTable(flagFields).index('by_key',['flagKey']).index('by_rank',['rank']),
   flagRun:defineTable(flagRunFields),
-  answer:defineTable(answerFields).index('by_flag',['flagKey']),
-  outcome:defineTable(outcomeFields).index('by_flag',['flagKey']),
+  answer:defineTable(answerFields).index('by_session_flag',['sessionId','flagKey']),
+  outcome:defineTable(outcomeFields).index('by_session_flag',['sessionId','flagKey']),
   editAttempt:defineTable({at:v.number()}).index('by_at',['at']),
-  msmeAnswer:defineTable(msmeAnswerFields).index('by_flag',['flagKey']),
-  msmeOutcome:defineTable(msmeOutcomeFields).index('by_flag',['flagKey']),
-  termLoanAnswer:defineTable(termLoanAnswerFields).index('by_flag',['flagKey']),
-  termLoanOutcome:defineTable(termLoanOutcomeFields).index('by_flag',['flagKey']),
+  msmeAnswer:defineTable(msmeAnswerFields).index('by_session_flag',['sessionId','flagKey']),
+  msmeOutcome:defineTable(msmeOutcomeFields).index('by_session_flag',['sessionId','flagKey']),
+  termLoanAnswer:defineTable(termLoanAnswerFields).index('by_session_flag',['sessionId','flagKey']),
+  termLoanOutcome:defineTable(termLoanOutcomeFields).index('by_session_flag',['sessionId','flagKey']),
   aiUsage:defineTable({day:v.string(),calls:v.number(),tokensIn:v.number(),tokensOut:v.number(),
     reservations:v.optional(v.array(v.object({id:v.string(),runId:v.string(),tokens:v.number()}))),
     runCalls:v.optional(v.array(v.object({runId:v.string(),calls:v.number()}))),
   }).index('by_day',['day']),
+  rbiCheck:defineTable({value:v.number(),date:v.string(),sourceUrl:v.string(),checkedAt:v.number(),lastDecision:v.union(v.string(),v.null()),nextStart:v.optional(v.string()),nextEnd:v.optional(v.string()),scheduleUrl:v.string(),scheduleFy:v.string()}).index('by_checked',['checkedAt']),
+  visitorSession:defineTable({sessionId:v.string(),codeHash:v.string(),createdAt:v.number(),expiresAt:v.number(),saveHour:v.number(),saves:v.number(),rbiDay:v.optional(v.string()),rbiChecks:v.optional(v.number())}).index('by_session',['sessionId']).index('by_expires',['expiresAt']),
+  visitorAttempt:defineTable({sessionId:v.string(),at:v.number()}).index('by_session',['sessionId']),
+  usageCounter:defineTable({key:v.string(),count:v.number()}).index('by_key',['key']),
 });

@@ -28,9 +28,10 @@ const verdictText = (v: 'within' | 'breach', max: number) => `${v === 'within' ?
 type Props = {
   state: DetailState; selection: Selection; passcode: string; busy: boolean; message: string;
   onRetry?: () => void; onSelect: (field: keyof Selection, value: string) => void; onPasscode: (value: string) => void; onSave: () => void; onDecide: (decision: 'approved' | 'sent_back') => void;
+  back?: { href: string; text: string }; codeLabel?: string;
 };
 
-export function GapDetailPage({ state, selection, passcode, busy, message, onRetry, onSelect, onPasscode, onSave, onDecide }: Props) {
+export function GapDetailPage({ state, selection, passcode, busy, message, onRetry, onSelect, onPasscode, onSave, onDecide, back, codeLabel }: Props) {
   const data = state.status === 'ready' ? state.data : null;
   const saved = (data?.answer ?? {}) as Selection;
   const dirty = !!data && (['nature', 'counterparty', 'term', 'declaration'] as const).some(k => (selection[k] ?? undefined) !== (saved[k] ?? undefined));
@@ -39,7 +40,7 @@ export function GapDetailPage({ state, selection, passcode, busy, message, onRet
     <div className="choices">{buttons.map(b => <button key={b.value} type="button" className="choice" aria-pressed={selection[field] === b.value} onClick={() => onSelect(field, b.value)}>{b.label}</button>)}</div>
   </fieldset>;
   return <section className="detail" aria-label="Gap detail" aria-busy={state.status === 'loading'}>
-    <a className="back" href="#/">← All gaps</a>
+    <a className="back" href={back?.href ?? '#/'}>{back?.text ?? '← All gaps'}</a>
     {state.status === 'loading' && <div className="skeleton" aria-hidden="true" />}
     {state.status === 'error' && <><p role="alert">Couldn't load this gap. Nothing here is final.</p>{onRetry && <button type="button" onClick={onRetry}>Try again</button>}</>}
     {state.status === 'missing' && <p>Nothing to review here.</p>}
@@ -62,7 +63,7 @@ export function GapDetailPage({ state, selection, passcode, busy, message, onRet
       <ul className="docs">{data.evidence.map(d => <li key={d.id}>{d.label}</li>)}</ul>
 
       <div className="passcode">
-        <label htmlFor="edit-passcode">Edit passcode</label>
+        <label htmlFor="edit-passcode">{codeLabel ?? 'Edit passcode'}</label>
         <input id="edit-passcode" type="password" autoComplete="off" value={passcode} onChange={ev => onPasscode(ev.target.value)} />
         <p className="note">Needed to save an answer or a decision.</p>
         <button type="button" onClick={onSave} disabled={busy || !selection.nature || passcode === ''}>Save answer</button>
